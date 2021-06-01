@@ -1,0 +1,9 @@
+ls.txt
+lyrics
+mom
+my_life
+oqp
+setgid
+setuid
+sticky
+u20052-2

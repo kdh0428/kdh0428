@@ -1,0 +1,1863 @@
+Script started on 2021-04-27 22:04:55+09:00 [TERM="xterm" TTY="/dev/pts/7" COLUMNS="80" LINES="24"]
+]0;u20052@solgae: ~u20052@solgae:~$ eco[K[Kh[Kcho 14 qjs[K[K[K[K번
+14번
+]0;u20052@solgae: ~u20052@solgae:~$ ㄷ[Kecho 12[K[K8qjs[K[K[K번
+8번
+]0;u20052@solgae: ~u20052@solgae:~$ sleee[Kp 100 [K[K[K[K200&[K &
+[1] 747391
+]0;u20052@solgae: ~u20052@solgae:~$ kill -STOP
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+]0;u20052@solgae: ~u20052@solgae:~$ [K]0;u20052@solgae: ~u20052@solgae:~$ job
+
+Command 'job' not found, did you mean:
+
+  command 'jo' from snap jo (1.4)
+  command 'jtb' from deb jtb (1.4.12-2)
+  command 'jdb' from deb openjdk-11-jdk-headless (11.0.10+9-0ubuntu1~20.04)
+  command 'jdb' from deb openjdk-13-jdk-headless (13.0.4+8-1~20.04)
+  command 'jdb' from deb openjdk-14-jdk-headless (14.0.2+12-1~20.04)
+  command 'jdb' from deb openjdk-8-jdk-headless (8u282-b08-0ubuntu1~20.04)
+  command 'joe' from deb joe (4.6-1build2)
+  command 'joe' from deb joe-jupp (3.1.39-1)
+  command 'jot' from deb athena-jot (9.0-7)
+  command 'wob' from deb wob (0.6-1)
+  command 'jo' from deb jo (1.1-1)
+
+See 'snap info <snapname>' for additional versions.
+
+]0;u20052@solgae: ~u20052@solgae:~$ jobss[K
+[1]+  Running                 sleep 200 &
+]0;u20052@solgae: ~u20052@solgae:~$ kill -STOP
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[1]+  Running                 sleep 200 &
+]0;u20052@solgae: ~u20052@solgae:~$ stop
+
+Command 'stop' not found, but there are 18 similar ones.
+
+]0;u20052@solgae: ~u20052@solgae:~$ sleep 300 &
+[2] 747598
+]0;u20052@solgae: ~u20052@solgae:~$ lill[K[K[K[Kkill -STOP
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[1]-  Running                 sleep 200 &
+[2]+  Running                 sleep 300 &
+]0;u20052@solgae: ~u20052@solgae:~$ [K]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[1]-  Done                    sleep 200
+[2]+  Running                 sleep 300 &
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[2]+  Running                 sleep 300 &
+]0;u20052@solgae: ~u20052@solgae:~$ fg 1
+bash: fg: 1: no such job
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[2]+  Running                 sleep 300 &
+]0;u20052@solgae: ~u20052@solgae:~$ fg [%2[K[K[K[K[K[Kfg 2
+sleep 300
+^Z
+[2]+  Stopped                 sleep 300
+]0;u20052@solgae: ~u20052@solgae:~$ sleep 500 &
+[3] 748613
+]0;u20052@solgae: ~u20052@solgae:~$ [d[K[Kjobs
+[2]+  Stopped                 sleep 300
+[3]-  Running                 sleep 500 &
+]0;u20052@solgae: ~u20052@solgae:~$ kill -STOP
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[2]+  Stopped                 sleep 300
+[3]-  Running                 sleep 500 &
+]0;u20052@solgae: ~u20052@solgae:~$ ps
+    PID TTY          TIME CMD
+ 745537 pts/10   00:00:00 bash
+ 747598 pts/10   00:00:00 sleep
+ 748613 pts/10   00:00:00 sleep
+ 748762 pts/10   00:00:00 ps
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[2]+  Stopped                 sleep 300
+[3]-  Running                 sleep 500 &
+]0;u20052@solgae: ~u20052@solgae:~$ fg %3
+sleep 500
+^Z
+[3]+  Stopped                 sleep 500
+]0;u20052@solgae: ~u20052@solgae:~$ ^C
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[2]-  Stopped                 sleep 300
+[3]+  Stopped                 sleep 500
+]0;u20052@solgae: ~u20052@solgae:~$ ki11\\[K[K[K[Kll -3
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[2]-  Stopped                 sleep 300
+[3]+  Stopped                 sleep 500
+]0;u20052@solgae: ~u20052@solgae:~$ echo ps
+ps
+]0;u20052@solgae: ~u20052@solgae:~$ ps
+    PID TTY          TIME CMD
+ 745537 pts/10   00:00:00 bash
+ 747598 pts/10   00:00:00 sleep
+ 748613 pts/10   00:00:00 sleep
+ 751350 pts/10   00:00:00 ps
+]0;u20052@solgae: ~u20052@solgae:~$ echo 12q[K [K번
+12번
+]0;u20052@solgae: ~u20052@solgae:~$ ㅔㄴ
+ㅔㄴ: command not found
+]0;u20052@solgae: ~u20052@solgae:~$ ps
+    PID TTY          TIME CMD
+ 745537 pts/10   00:00:00 bash
+ 747598 pts/10   00:00:00 sleep
+ 748613 pts/10   00:00:00 sleep
+ 751415 pts/10   00:00:00 ps
+]0;u20052@solgae: ~u20052@solgae:~$ kill -0 pid
+bash: kill: pid: arguments must be process or job IDs
+]0;u20052@solgae: ~u20052@solgae:~$ PID[K[K[Kps
+    PID TTY          TIME CMD
+ 745537 pts/10   00:00:00 bash
+ 747598 pts/10   00:00:00 sleep
+ 748613 pts/10   00:00:00 sleep
+ 752474 pts/10   00:00:00 ps
+]0;u20052@solgae: ~u20052@solgae:~$ ps-f
+
+Command 'ps-f' not found, did you mean:
+
+  command 'psf' from deb tcm (2.20+TSQD-5build1)
+
+Try: apt install <deb name>
+
+]0;u20052@solgae: ~u20052@solgae:~$ ps-[K -f
+UID          PID    PPID  C STIME TTY          TIME CMD
+u20052    745537  745536  0 22:04 pts/10   00:00:00 bash -i
+u20052    747598  745537  0 22:29 pts/10   00:00:00 sleep 300
+u20052    748613  745537  0 22:36 pts/10   00:00:00 sleep 500
+u20052    752499  745537  0 23:07 pts/10   00:00:00 ps -f
+]0;u20052@solgae: ~u20052@solgae:~$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0  4월15 ?      00:04:05 /sbin/init splash
+root           2       0  0  4월15 ?      00:00:00 [kthreadd]
+root           3       2  0  4월15 ?      00:00:00 [rcu_gp]
+root           4       2  0  4월15 ?      00:00:00 [rcu_par_gp]
+root           6       2  0  4월15 ?      00:00:00 [kworker/0:0H-kblockd]
+root           8       2  0  4월15 ?      00:00:00 [mm_percpu_wq]
+root           9       2  0  4월15 ?      00:00:00 [ksoftirqd/0]
+root          10       2  0  4월15 ?      00:18:13 [rcu_sched]
+root          11       2  0  4월15 ?      00:00:03 [migration/0]
+root          12       2  0  4월15 ?      00:00:00 [idle_inject/0]
+root          14       2  0  4월15 ?      00:00:00 [cpuhp/0]
+root          15       2  0  4월15 ?      00:00:00 [cpuhp/1]
+root          16       2  0  4월15 ?      00:00:00 [idle_inject/1]
+root          17       2  0  4월15 ?      00:00:03 [migration/1]
+root          18       2  0  4월15 ?      00:00:00 [ksoftirqd/1]
+root          20       2  0  4월15 ?      00:00:00 [kworker/1:0H-kblockd]
+root          21       2  0  4월15 ?      00:00:00 [cpuhp/2]
+root          22       2  0  4월15 ?      00:00:00 [idle_inject/2]
+root          23       2  0  4월15 ?      00:00:10 [migration/2]
+root          24       2  0  4월15 ?      00:00:00 [ksoftirqd/2]
+root          26       2  0  4월15 ?      00:00:00 [kworker/2:0H-kblockd]
+root          27       2  0  4월15 ?      00:00:00 [cpuhp/3]
+root          28       2  0  4월15 ?      00:00:00 [idle_inject/3]
+root          29       2  0  4월15 ?      00:00:03 [migration/3]
+root          30       2  0  4월15 ?      00:00:00 [ksoftirqd/3]
+root          32       2  0  4월15 ?      00:00:00 [kworker/3:0H]
+root          33       2  0  4월15 ?      00:00:00 [cpuhp/4]
+root          34       2  0  4월15 ?      00:00:00 [idle_inject/4]
+root          35       2  0  4월15 ?      00:00:03 [migration/4]
+root          36       2  0  4월15 ?      00:00:00 [ksoftirqd/4]
+root          38       2  0  4월15 ?      00:00:00 [kworker/4:0H-kblockd]
+root          39       2  0  4월15 ?      00:00:00 [cpuhp/5]
+root          40       2  0  4월15 ?      00:00:00 [idle_inject/5]
+root          41       2  0  4월15 ?      00:00:03 [migration/5]
+root          42       2  0  4월15 ?      00:00:00 [ksoftirqd/5]
+root          44       2  0  4월15 ?      00:00:00 [kworker/5:0H-kblockd]
+root          45       2  0  4월15 ?      00:00:00 [cpuhp/6]
+root          46       2  0  4월15 ?      00:00:00 [idle_inject/6]
+root          47       2  0  4월15 ?      00:00:05 [migration/6]
+root          48       2  0  4월15 ?      00:01:17 [ksoftirqd/6]
+root          50       2  0  4월15 ?      00:00:00 [kworker/6:0H-kblockd]
+root          51       2  0  4월15 ?      00:00:00 [cpuhp/7]
+root          52       2  0  4월15 ?      00:00:00 [idle_inject/7]
+root          53       2  0  4월15 ?      00:00:06 [migration/7]
+root          54       2  0  4월15 ?      00:00:08 [ksoftirqd/7]
+root          56       2  0  4월15 ?      00:00:00 [kworker/7:0H]
+root          57       2  0  4월15 ?      00:00:00 [cpuhp/8]
+root          58       2  0  4월15 ?      00:00:00 [idle_inject/8]
+root          59       2  0  4월15 ?      00:00:06 [migration/8]
+root          60       2  0  4월15 ?      00:00:04 [ksoftirqd/8]
+root          62       2  0  4월15 ?      00:00:00 [kworker/8:0H-kblockd]
+root          63       2  0  4월15 ?      00:00:00 [cpuhp/9]
+root          64       2  0  4월15 ?      00:00:00 [idle_inject/9]
+root          65       2  0  4월15 ?      00:00:06 [migration/9]
+root          66       2  0  4월15 ?      00:00:03 [ksoftirqd/9]
+root          68       2  0  4월15 ?      00:00:00 [kworker/9:0H-kblockd]
+root          69       2  0  4월15 ?      00:00:00 [cpuhp/10]
+root          70       2  0  4월15 ?      00:00:00 [idle_inject/10]
+root          71       2  0  4월15 ?      00:00:06 [migration/10]
+root          72       2  0  4월15 ?      00:00:03 [ksoftirqd/10]
+root          74       2  0  4월15 ?      00:00:00 [kworker/10:0H-kblockd]
+root          75       2  0  4월15 ?      00:00:00 [cpuhp/11]
+root          76       2  0  4월15 ?      00:00:00 [idle_inject/11]
+root          77       2  0  4월15 ?      00:00:06 [migration/11]
+root          78       2  0  4월15 ?      00:00:03 [ksoftirqd/11]
+root          80       2  0  4월15 ?      00:00:00 [kworker/11:0H-kblockd]
+root          81       2  0  4월15 ?      00:00:00 [kdevtmpfs]
+root          82       2  0  4월15 ?      00:00:00 [netns]
+root          83       2  0  4월15 ?      00:00:00 [rcu_tasks_kthre]
+root          84       2  0  4월15 ?      00:00:00 [rcu_tasks_rude_]
+root          85       2  0  4월15 ?      00:00:00 [rcu_tasks_trace]
+root          86       2  0  4월15 ?      00:00:00 [kauditd]
+root          92       2  0  4월15 ?      00:00:01 [khungtaskd]
+root          93       2  0  4월15 ?      00:00:00 [oom_reaper]
+root          94       2  0  4월15 ?      00:00:00 [writeback]
+root          95       2  0  4월15 ?      00:00:00 [kcompactd0]
+root          96       2  0  4월15 ?      00:00:00 [ksmd]
+root          97       2  0  4월15 ?      00:00:00 [khugepaged]
+root         143       2  0  4월15 ?      00:00:00 [kintegrityd]
+root         144       2  0  4월15 ?      00:00:00 [kblockd]
+root         145       2  0  4월15 ?      00:00:00 [blkcg_punt_bio]
+root         146       2  0  4월15 ?      00:00:00 [tpm_dev_wq]
+root         147       2  0  4월15 ?      00:00:00 [ata_sff]
+root         148       2  0  4월15 ?      00:00:00 [md]
+root         149       2  0  4월15 ?      00:00:00 [edac-poller]
+root         150       2  0  4월15 ?      00:00:00 [devfreq_wq]
+root         152       2  0  4월15 ?      00:00:00 [watchdogd]
+root         155       2  0  4월15 ?      00:00:00 [pm_wq]
+root         159       2  0  4월15 ?      00:00:00 [kswapd0]
+root         160       2  0  4월15 ?      00:00:00 [ecryptfs-kthrea]
+root         162       2  0  4월15 ?      00:00:00 [kthrotld]
+root         164       2  0  4월15 ?      00:00:00 [acpi_thermal_pm]
+root         165       2  0  4월15 ?      00:00:00 [scsi_eh_0]
+root         166       2  0  4월15 ?      00:00:00 [scsi_tmf_0]
+root         167       2  0  4월15 ?      00:00:00 [scsi_eh_1]
+root         168       2  0  4월15 ?      00:00:00 [scsi_tmf_1]
+root         170       2  0  4월15 ?      00:00:00 [vfio-irqfd-clea]
+root         171       2  0  4월15 ?      00:00:00 [ipv6_addrconf]
+root         181       2  0  4월15 ?      00:00:00 [kstrp]
+root         184       2  0  4월15 ?      00:00:00 [zswap-shrink]
+root         185       2  0  4월15 ?      00:00:00 [kworker/u65:0]
+root         190       2  0  4월15 ?      00:00:00 [charger_manager]
+root         195       2  0  4월15 ?      00:00:00 [kworker/4:1H-kblockd]
+root         248       2  0  4월15 ?      00:00:00 [scsi_eh_2]
+root         249       2  0  4월15 ?      00:00:00 [scsi_tmf_2]
+root         254       2  0  4월15 ?      00:00:05 [kworker/6:1H-kblockd]
+root         255       2  0  4월15 ?      00:00:08 [kworker/8:1H-kblockd]
+root         259       2  0  4월15 ?      00:00:07 [kworker/7:1H-kblockd]
+root         260       2  0  4월15 ?      00:00:00 [kworker/2:1H-kblockd]
+root         261       2  0  4월15 ?      00:00:00 [kworker/3:1H-kblockd]
+root         262       2  0  4월15 ?      00:00:00 [kworker/0:1H-kblockd]
+root         280       2  0  4월15 ?      00:00:00 [kworker/1:1H-kblockd]
+root         282       2  0  4월15 ?      00:00:00 [kworker/5:1H-kblockd]
+root         283       2  0  4월15 ?      00:00:53 [jbd2/sda5-8]
+root         284       2  0  4월15 ?      00:00:00 [ext4-rsv-conver]
+root         298       2  0  4월15 ?      00:00:08 [kworker/11:1H-kblockd]
+root         329       1  0  4월15 ?      00:09:10 /lib/systemd/systemd-journal
+root         331       2  0  4월15 ?      00:00:08 [kworker/9:1H-kblockd]
+root         362       2  0  4월15 ?      00:00:00 bpfilter_umh
+root         377       2  0  4월15 ?      00:00:00 [loop0]
+root         378       2  0  4월15 ?      00:00:00 [loop1]
+root         380       2  0  4월15 ?      00:00:00 [loop2]
+root         383       2  0  4월15 ?      00:00:00 [loop3]
+root         385       2  0  4월15 ?      00:00:00 [loop4]
+root         389       1  0  4월15 ?      00:00:04 /lib/systemd/systemd-udevd
+root         390       2  0  4월15 ?      00:00:00 [loop5]
+root         391       2  0  4월15 ?      00:00:00 [loop6]
+root         483       2  0  4월15 ?      00:00:08 [kworker/10:1H-kblockd]
+root         554       2  0  4월15 ?      00:00:00 [cryptd]
+root         555       2  0  4월15 ?      00:00:00 [kipmi0]
+root         569       2  0  4월15 ?      00:00:00 [ttm_swap]
+systemd+     767       1  0  4월15 ?      00:00:17 /lib/systemd/systemd-resolve
+systemd+     768       1  0  4월15 ?      00:00:02 /lib/systemd/systemd-timesyn
+root         772       1  0  4월15 ?      00:03:38 /usr/lib/accountsservice/acc
+root         773       1  0  4월15 ?      00:00:00 /usr/sbin/acpid
+avahi        776       1  0  4월15 ?      00:10:19 avahi-daemon: running [solga
+root         777       1  0  4월15 ?      00:00:02 /usr/sbin/cron -f
+message+     779       1  0  4월15 ?      00:05:29 /usr/bin/dbus-daemon --syste
+root         780       1  0  4월15 ?      00:18:31 /usr/sbin/NetworkManager --n
+root         788       1  0  4월15 ?      00:01:53 /usr/sbin/irqbalance --foreg
+root         790       1  0  4월15 ?      00:00:00 /usr/bin/python3 /usr/bin/ne
+root         793       1  0  4월15 ?      00:12:24 /usr/lib/policykit-1/polkitd
+syslog       795       1  0  4월15 ?      00:02:40 /usr/sbin/rsyslogd -n -iNONE
+root         799       1  0  4월15 ?      00:01:35 /usr/lib/snapd/snapd
+root         800       1  0  4월15 ?      00:00:00 /usr/libexec/switcheroo-cont
+root         801       1  0  4월15 ?      00:00:21 /lib/systemd/systemd-logind
+root         803       1  0  4월15 ?      00:00:09 /usr/lib/udisks2/udisksd
+root         804       1  0  4월15 ?      00:00:07 /sbin/wpa_supplicant -u -s -
+avahi        809     776  0  4월15 ?      00:00:00 avahi-daemon: chroot helper
+root         877       1  0  4월15 ?      00:00:00 /usr/bin/python3 /usr/share/
+root         878       1  0  4월15 ?      00:00:02 /usr/sbin/ModemManager --fil
+root         904       1  0  4월15 ?      00:00:01 /usr/sbin/gdm3
+root         912       1  0  4월15 ?      00:01:48 sshd: /usr/sbin/sshd -D [lis
+colord       944       1  0  4월15 ?      00:00:02 /usr/libexec/colord
+root         947     904  0  4월15 ?      00:00:01 gdm-session-worker [pam/gdm-
+gdm          966       1  0  4월15 ?      00:00:09 /lib/systemd/systemd --user
+gdm          967     966  0  4월15 ?      00:00:00 (sd-pam)
+gdm          983     966  0  4월15 ?      00:00:00 /usr/bin/pulseaudio --daemon
+gdm          985     966  0  4월15 ?      00:00:00 /usr/libexec/tracker-miner-f
+gdm          986     947  0  4월15 tty1   00:00:00 /usr/lib/gdm3/gdm-wayland-se
+gdm          988     966  0  4월15 ?      00:00:00 /usr/bin/dbus-daemon --sessi
+rtkit        992       1  0  4월15 ?      00:00:25 /usr/libexec/rtkit-daemon
+gdm         1009     986  0  4월15 tty1   00:00:00 dbus-run-session -- gnome-se
+gdm         1010    1009  0  4월15 tty1   00:00:00 dbus-daemon --nofork --print
+gdm         1011    1009  0  4월15 tty1   00:00:01 /usr/libexec/gnome-session-b
+gdm         1026     966  0  4월15 ?      00:00:00 /usr/libexec/gvfsd
+gdm         1048     966  0  4월15 ?      00:00:00 /usr/libexec/gvfsd-fuse /run
+gdm         1050     966  0  4월15 ?      00:00:39 /usr/libexec/gvfs-udisks2-vo
+gdm         1055     966  0  4월15 ?      00:00:00 /usr/libexec/gvfs-mtp-volume
+gdm         1064     966  0  4월15 ?      00:01:01 /usr/libexec/gvfs-afc-volume
+gdm         1069     966  0  4월15 ?      00:00:00 /usr/libexec/gvfs-gphoto2-vo
+gdm         1077     966  0  4월15 ?      00:00:00 /usr/libexec/gvfs-goa-volume
+gdm         1081     966  0  4월15 ?      00:00:02 /usr/libexec/goa-daemon
+gdm         1123    1011  0  4월15 tty1   00:13:54 /usr/bin/gnome-shell
+gdm         1131     966  0  4월15 ?      00:00:02 /usr/libexec/goa-identity-se
+root        1133       1  0  4월15 ?      00:00:02 /usr/lib/upower/upowerd
+whoopsie    1158       1  0  4월15 ?      00:00:02 /usr/bin/whoopsie -f
+kernoops    1174       1  0  4월15 ?      00:00:33 /usr/sbin/kerneloops --test
+kernoops    1178       1  0  4월15 ?      00:00:33 /usr/sbin/kerneloops
+root        2044       1  0  4월15 ?      00:00:05 /usr/lib/postfix/sbin/master
+postfix     2046    2044  0  4월15 ?      00:00:01 qmgr -l -t unix -u
+gdm         2087       1  0  4월15 tty1   00:00:00 /usr/libexec/at-spi-bus-laun
+gdm         2092    2087  0  4월15 tty1   00:00:00 /usr/bin/dbus-daemon --confi
+gdm         2101    1123  0  4월15 tty1   00:00:00 /usr/bin/Xwayland :1024 -roo
+gdm         2117       1  0  4월15 tty1   00:00:00 /usr/libexec/xdg-permission-
+gdm         2127       1  0  4월15 tty1   00:00:01 /usr/bin/gjs /usr/share/gnom
+gdm         2129       1  0  4월15 tty1   00:00:00 /usr/libexec/at-spi2-registr
+gdm         2141    1011  0  4월15 tty1   00:00:05 /usr/libexec/gsd-sharing
+gdm         2143    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-wacom
+gdm         2144    1011  0  4월15 tty1   00:00:08 /usr/libexec/gsd-color
+gdm         2145    1011  0  4월15 tty1   00:00:01 /usr/libexec/gsd-keyboard
+gdm         2146    1011  0  4월15 tty1   00:00:03 /usr/libexec/gsd-print-notif
+gdm         2147    1011  0  4월15 tty1   00:00:01 /usr/libexec/gsd-rfkill
+gdm         2148    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-smartcard
+gdm         2149    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-datetime
+gdm         2150    1011  0  4월15 tty1   00:00:01 /usr/libexec/gsd-media-keys
+gdm         2151    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-screensaver
+gdm         2153    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-sound
+gdm         2154    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-a11y-settin
+gdm         2155    1011  0  4월15 tty1   00:00:47 /usr/libexec/gsd-housekeepin
+gdm         2156    1011  0  4월15 tty1   00:00:01 /usr/libexec/gsd-power
+gdm         2202       1  0  4월15 tty1   00:00:00 /usr/libexec/gsd-printer
+gdm         2280    1123  0  4월15 tty1   00:00:00 ibus-daemon --panel disable 
+gdm         2285    2280  0  4월15 tty1   00:00:00 /usr/libexec/ibus-memconf
+gdm         2287       1  0  4월15 tty1   00:00:00 /usr/libexec/ibus-x11 --kill
+gdm         2292       1  0  4월15 tty1   00:00:00 /usr/libexec/ibus-portal
+gdm         2297    2280  0  4월15 tty1   00:00:00 /usr/libexec/ibus-engine-sim
+gdm         2365       1  0  4월15 tty1   00:00:00 /usr/libexec/dconf-service
+test        2680       1 99  4월15 ?      74-11:12:37 /home/test/.dhpcd
+root       60877       2  0  4월16 ?      00:00:00 [xfsalloc]
+root       60879       2  0  4월16 ?      00:00:00 [xfs_mru_cache]
+root       60890       2  0  4월16 ?      00:00:00 [jfsIO]
+root       60891       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60892       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60893       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60894       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60895       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60896       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60897       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60898       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60899       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60900       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60901       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60902       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60903       2  0  4월16 ?      00:00:00 [jfsSync]
+root       72734       1  0  4월16 ?      00:01:11 /usr/sbin/apache2 -k start
+root      480209       2  0  4월23 ?      00:00:00 [loop7]
+root      628588       2  0  4월26 ?      00:09:03 [kworker/2:2-events]
+root      668182       2  0  4월26 ?      00:00:07 [kworker/0:0-events]
+root      677405       2  0  4월26 ?      00:00:01 [kworker/1:1-events]
+www-data  692454   72734  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data  692455   72734  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+root      692520       1  0 00:00 ?        00:00:00 /usr/sbin/cupsd -l
+root      692522       1  0 00:00 ?        00:00:02 /usr/sbin/cups-browsed
+lp        692532  692520  0 00:00 ?        00:00:00 /usr/lib/cups/notifier/dbus 
+lp        692533  692520  0 00:00 ?        00:00:00 /usr/lib/cups/notifier/dbus 
+gdm       703317     966  0 06:50 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u20084    726590       1  0 18:07 ?        00:00:01 /lib/systemd/systemd --user
+u20084    726591  726590  0 18:07 ?        00:00:00 (sd-pam)
+u20084    726600  726590  0 18:07 ?        00:00:01 /usr/libexec/tracker-miner-f
+u20084    726603  726590  0 18:07 ?        00:00:01 /usr/bin/dbus-daemon --sessi
+u20084    726632  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfsd
+u20084    726641  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20084    726648  726590  0 18:07 ?        00:00:02 /usr/libexec/gvfs-udisks2-vo
+u20084    726661  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20084    726669  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20084    726678  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20084    726692  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20084    726702  726590  0 18:07 ?        00:00:00 /usr/libexec/goa-daemon
+u20084    726713  726590  0 18:07 ?        00:00:00 /usr/libexec/goa-identity-se
+u20084    726743  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      729138       2  0 18:40 ?        00:00:00 [kworker/3:2-events]
+root      729430       2  0 18:42 ?        00:00:00 [kworker/4:0-events]
+u16082    732365       1  0 19:50 ?        00:00:00 /lib/systemd/systemd --user
+u16082    732366  732365  0 19:50 ?        00:00:00 (sd-pam)
+u16082    732375  732365  0 19:50 ?        00:00:00 /usr/libexec/tracker-miner-f
+u16082    732379  732365  0 19:50 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u16082    732408  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfsd
+u16082    732416  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u16082    732422  732365  0 19:50 ?        00:00:02 /usr/libexec/gvfs-udisks2-vo
+u16082    732440  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u16082    732450  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u16082    732463  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u16082    732476  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u16082    732480  732365  0 19:50 ?        00:00:00 /usr/libexec/goa-daemon
+u16082    732490  732365  0 19:50 ?        00:00:00 /usr/libexec/goa-identity-se
+u16082    732517  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      734339       2  0 20:21 ?        00:00:20 [kworker/2:0-events]
+root      734779       2  0 20:25 ?        00:00:00 [kworker/1:2-events]
+u16082    735072       1  0 20:27 ?        00:00:00 sleep 30000
+root      735125       2  0 20:28 ?        00:00:00 [kworker/5:1-events]
+u20084    735368       1  0 20:30 ?        00:00:00 sleep 10000
+u17056    737681       1  0 20:48 ?        00:00:00 /lib/systemd/systemd --user
+u17056    737682  737681  0 20:48 ?        00:00:00 (sd-pam)
+u17056    737691  737681  0 20:48 ?        00:00:00 /usr/libexec/tracker-miner-f
+u17056    737694  737681  0 20:48 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u17056    737725  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfsd
+u17056    737732  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u17056    737735  737681  0 20:48 ?        00:00:01 /usr/libexec/gvfs-udisks2-vo
+u17056    737757  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u17056    737765  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u17056    737776  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u17056    737792  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u17056    737796  737681  0 20:48 ?        00:00:00 /usr/libexec/goa-daemon
+u17056    737806  737681  0 20:48 ?        00:00:00 /usr/libexec/goa-identity-se
+u17056    737833  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      737849     912  0 20:49 ?        00:00:00 sshd: u20013 [priv]
+u20013    737853       1  0 20:49 ?        00:00:00 /lib/systemd/systemd --user
+u20013    737854  737853  0 20:49 ?        00:00:00 (sd-pam)
+u20013    737861  737853  0 20:49 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20013    737863  737853  0 20:49 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20013    737870  737853  0 20:49 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20013    737889  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfsd
+u20013    737904  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20013    737911  737853  0 20:49 ?        00:00:01 /usr/libexec/gvfs-udisks2-vo
+u20013    737921  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20013    737931  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20013    737939  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20013    737948  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20013    737957  737853  0 20:49 ?        00:00:00 /usr/libexec/goa-daemon
+u20013    737969  737849  0 20:49 ?        00:00:00 sshd: u20013@pts/8
+u20013    737976  737853  0 20:49 ?        00:00:00 /usr/libexec/goa-identity-se
+u20013    737977  737969  0 20:49 pts/8    00:00:00 -bash
+u20013    738005  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      738750     912  0 21:03 ?        00:00:00 sshd: u20055 [priv]
+u20055    738753       1  0 21:03 ?        00:00:00 /lib/systemd/systemd --user
+u20055    738754  738753  0 21:03 ?        00:00:00 (sd-pam)
+u20055    738761  738753  0 21:03 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20055    738763  738753  0 21:03 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20055    738766  738753  0 21:03 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20055    738781  738753  0 21:03 ?        00:00:00 /usr/libexec/gvfsd
+u20055    738804  738753  0 21:03 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20055    738812  738753  0 21:03 ?        00:00:01 /usr/libexec/gvfs-udisks2-vo
+u20055    738828  738753  0 21:03 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20055    738836  738753  0 21:03 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20055    738845  738753  0 21:03 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20055    738863  738750  0 21:03 ?        00:00:00 sshd: u20055@pts/14
+u20055    738864  738753  0 21:03 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20055    738868  738753  0 21:03 ?        00:00:00 /usr/libexec/goa-daemon
+u20055    738869  738863  0 21:03 pts/14   00:00:00 -bash
+u20055    738878  738753  0 21:03 ?        00:00:00 /usr/libexec/goa-identity-se
+u20055    738905  738753  0 21:03 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u20055    738915  738869  0 21:04 pts/14   00:00:00 script
+u20055    738916  738915  0 21:04 pts/15   00:00:00 bash -i
+root      741159     912  0 21:25 ?        00:00:00 sshd: u19054 [priv]
+u19054    741209       1  0 21:26 ?        00:00:00 /lib/systemd/systemd --user
+u19054    741210  741209  0 21:26 ?        00:00:00 (sd-pam)
+u19054    741215  741209  0 21:26 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u19054    741217  741209  0 21:26 ?        00:00:00 /usr/libexec/tracker-miner-f
+u19054    741220  741209  0 21:26 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u19054    741233  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfsd
+u19054    741247  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u19054    741265  741209  0 21:26 ?        00:00:01 /usr/libexec/gvfs-udisks2-vo
+u19054    741271  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u19054    741284  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u19054    741294  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u19054    741304  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u19054    741314  741209  0 21:26 ?        00:00:00 /usr/libexec/goa-daemon
+u19054    741322  741159  0 21:26 ?        00:00:00 sshd: u19054@pts/23
+u19054    741326  741322  0 21:26 pts/23   00:00:00 -bash
+u19054    741331  741209  0 21:26 ?        00:00:00 /usr/libexec/goa-identity-se
+u19054    741359  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u19054    741826  741326  0 21:28 pts/23   00:00:00 sleep 1000
+u17056    741954       1  0 21:29 ?        00:00:00 sleep 100000
+u17056    741960       1  0 21:29 ?        00:00:00 sleep 100000
+u17056    741961       1  0 21:29 ?        00:00:00 sleep 100000
+u19054    742840  741326  0 21:35 pts/23   00:00:00 script -a
+u19054    742841  742840  0 21:35 pts/19   00:00:00 bash -i
+u19054    742855  742841  0 21:35 pts/19   00:00:00 sleep 1000
+root      743117       2  0 21:38 ?        00:00:00 [kworker/4:2-events]
+root      743882       1  0 21:45 ?        00:00:00 /usr/libexec/fwupd/fwupd
+root      745172     912  0 21:59 ?        00:00:00 sshd: u20052 [priv]
+u20052    745178       1  0 22:00 ?        00:00:00 /lib/systemd/systemd --user
+u20052    745179  745178  0 22:00 ?        00:00:00 (sd-pam)
+u20052    745185  745178  0 22:00 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20052    745187  745178  0 22:00 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20052    745190  745178  0 22:00 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20052    745215  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfsd
+u20052    745228  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20052    745236  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u20052    745250  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20052    745259  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20052    745267  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20052    745281  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20052    745291  745178  0 22:00 ?        00:00:00 /usr/libexec/goa-daemon
+u20052    745292  745172  0 22:00 ?        00:00:00 sshd: u20052@pts/7
+u20052    745294  745292  0 22:00 pts/7    00:00:00 -bash
+u20052    745303  745178  0 22:00 ?        00:00:00 /usr/libexec/goa-identity-se
+u20052    745328  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u20052    745536  745294  0 22:04 pts/7    00:00:00 script
+u20052    745537  745536  0 22:04 pts/10   00:00:00 bash -i
+root      746418       2  0 22:16 ?        00:00:00 [kworker/0:1]
+root      746979     912  0 22:22 ?        00:00:00 sshd: u17022 [priv]
+u17022    746982       1  0 22:22 ?        00:00:00 /lib/systemd/systemd --user
+u17022    746983  746982  0 22:22 ?        00:00:00 (sd-pam)
+u17022    746989  746982  0 22:22 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u17022    746991  746982  0 22:22 ?        00:00:00 /usr/libexec/tracker-miner-f
+u17022    746998  746982  0 22:22 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u17022    747027  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfsd
+u17022    747032  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u17022    747035  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u17022    747059  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u17022    747068  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u17022    747085  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u17022    747088  746979  0 22:22 ?        00:00:00 sshd: u17022@pts/6
+u17022    747092  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u17022    747096  746982  0 22:22 ?        00:00:00 /usr/libexec/goa-daemon
+u17022    747097  747088  0 22:22 pts/6    00:00:00 -tcsh
+u17022    747107  746982  0 22:22 ?        00:00:00 /usr/libexec/goa-identity-se
+u17022    747530  747097  0 22:28 pts/6    00:00:00 script -a
+u17022    747531  747530  0 22:28 pts/17   00:00:00 -csh -i
+u20052    747598  745537  0 22:29 pts/10   00:00:00 sleep 300
+root      747770     912  0 22:32 ?        00:00:00 sshd: u18075 [priv]
+u18075    747777       1  0 22:32 ?        00:00:00 /lib/systemd/systemd --user
+u18075    747778  747777  0 22:32 ?        00:00:00 (sd-pam)
+u18075    747786  747777  0 22:32 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u18075    747788  747777  0 22:32 ?        00:00:00 /usr/libexec/tracker-miner-f
+u18075    747798  747777  0 22:32 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u18075    747824  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfsd
+u18075    747829  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u18075    747837  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u18075    747853  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u18075    747862  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u18075    747871  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u18075    747888  747770  0 22:32 ?        00:00:00 sshd: u18075@pts/21
+u18075    747889  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u18075    747893  747777  0 22:32 ?        00:00:00 /usr/libexec/goa-daemon
+u18075    747901  747777  0 22:32 ?        00:00:00 /usr/libexec/goa-identity-se
+u18075    747915  747888  0 22:32 pts/21   00:00:00 -bash
+root      748017       2  0 22:33 ?        00:00:00 [kworker/7:0-events]
+root      748188       2  0 22:33 ?        00:00:00 [kworker/10:0-events]
+root      748197     912  0 22:33 ?        00:00:00 sshd: u20077 [priv]
+u20077    748201       1  0 22:33 ?        00:00:00 /lib/systemd/systemd --user
+u20077    748202  748201  0 22:33 ?        00:00:00 (sd-pam)
+u20077    748208  748201  0 22:33 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20077    748210  748201  0 22:33 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20077    748212  748201  0 22:33 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20077    748237  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfsd
+u20077    748251  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20077    748259  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u20077    748277  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20077    748287  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20077    748306  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20077    748307  748197  0 22:33 ?        00:00:00 sshd: u20077@pts/20
+u20077    748311  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20077    748315  748201  0 22:33 ?        00:00:00 /usr/libexec/goa-daemon
+u20077    748316  748307  0 22:33 pts/20   00:00:00 -bash
+u20077    748327  748201  0 22:33 ?        00:00:00 /usr/libexec/goa-identity-se
+u20077    748360  748316  0 22:34 pts/20   00:00:00 script -a
+u20077    748361  748360  0 22:34 pts/22   00:00:00 bash -i
+u20052    748613  745537  0 22:36 pts/10   00:00:00 sleep 500
+u20077    748734  748361  0 22:37 pts/22   00:00:00 sleep 2000
+u18075    748805  747915  0 22:38 pts/21   00:00:00 script -a
+u18075    748806  748805  0 22:38 pts/25   00:00:00 bash -i
+u17022    748872  746982  0 22:38 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u17022    749109  747531  0 22:40 pts/17   00:00:00 bash
+root      749326     912  0 22:43 ?        00:00:00 sshd: u20057 [priv]
+u20057    749333       1  0 22:44 ?        00:00:00 /lib/systemd/systemd --user
+u20057    749334  749333  0 22:44 ?        00:00:00 (sd-pam)
+u20057    749340  749333  0 22:44 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20057    749342  749333  0 22:44 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20057    749345  749333  0 22:44 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20057    749359  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfsd
+u20057    749383  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20057    749390  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u20057    749407  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20057    749416  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20057    749429  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20057    749443  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20057    749447  749333  0 22:44 ?        00:00:00 /usr/libexec/goa-daemon
+u20057    749469  749326  0 22:44 ?        00:00:00 sshd: u20057@pts/26
+u20057    749476  749333  0 22:44 ?        00:00:00 /usr/libexec/goa-identity-se
+u20057    749484  749469  0 22:44 pts/26   00:00:00 -tcsh
+u20057    749501  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u20057    749509  749484  0 22:44 pts/26   00:00:00 script
+u20057    749510  749509  0 22:44 pts/27   00:00:00 -csh -i
+u19054    749619  742841  0 22:46 pts/19   00:00:00 vi script1
+root      749663       2  0 22:46 ?        00:00:00 [kworker/u64:0-events_unboun
+u20077    749780  748361  0 22:47 pts/22   00:00:00 sleep 2000
+root      749932     912  0 22:49 ?        00:00:00 sshd: u14016 [priv]
+root      749938       2  0 22:49 ?        00:00:00 [kworker/9:2-events]
+u14016    749941       1  0 22:49 ?        00:00:00 /lib/systemd/systemd --user
+u14016    749942  749941  0 22:49 ?        00:00:00 (sd-pam)
+root      749947       2  0 22:49 ?        00:00:00 [kworker/3:1]
+u14016    749949  749941  0 22:49 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u14016    749951  749941  0 22:49 ?        00:00:00 /usr/libexec/tracker-miner-f
+u14016    749958  749941  0 22:49 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u14016    749987  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfsd
+u14016    749992  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u14016    749994  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u14016    750011  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u14016    750019  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u14016    750028  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u14016    750037  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u14016    750048  749941  0 22:49 ?        00:00:00 /usr/libexec/goa-daemon
+u14016    750055  749932  0 22:49 ?        00:00:00 sshd: u14016@pts/0
+u14016    750059  750055  0 22:49 pts/0    00:00:00 -bash
+u14016    750068  749941  0 22:49 ?        00:00:00 /usr/libexec/goa-identity-se
+u14016    750159  750059  0 22:49 pts/0    00:00:00 script -a
+u14016    750160  750159  0 22:49 pts/29   00:00:00 bash -i
+u20055    750454  738916  0 22:50 pts/15   00:00:00 sleep 1000
+u18075    750472  747777  0 22:50 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      750730       2  0 22:54 ?        00:00:00 [kworker/8:1-rcu_par_gp]
+root      750731       2  0 22:54 ?        00:00:00 [kworker/10:2-events]
+root      750851       2  0 22:55 ?        00:00:00 [kworker/6:1-events]
+root      750866       2  0 22:55 ?        00:00:00 [kworker/11:1-memcg_kmem_cac
+root      750868       2  0 22:55 ?        00:00:00 [kworker/u64:4-events_unboun
+root      751016       2  0 22:56 ?        00:00:00 [kworker/5:0-events]
+u17063    751019       1  0 22:56 ?        00:00:00 /lib/systemd/systemd --user
+u17063    751020  751019  0 22:56 ?        00:00:00 (sd-pam)
+u17063    751028  751019  0 22:56 ?        00:00:00 /usr/libexec/tracker-miner-f
+u17063    751031  751019  0 22:56 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u17063    751055  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfsd
+u17063    751065  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u17063    751071  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u17063    751092  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u17063    751101  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u17063    751111  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u17063    751128  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u17063    751134  751019  0 22:56 ?        00:00:00 /usr/libexec/goa-daemon
+u17063    751145  751019  0 22:56 ?        00:00:00 /usr/libexec/goa-identity-se
+postfix   751253    2044  0 22:57 ?        00:00:00 pickup -l -t unix -u -c
+root      751470     912  0 22:58 ?        00:00:00 sshd: u20088 [priv]
+u20088    751508       1  0 22:59 ?        00:00:00 /lib/systemd/systemd --user
+u20088    751509  751508  0 22:59 ?        00:00:00 (sd-pam)
+u20088    751514  751508  0 22:59 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20088    751516  751508  0 22:59 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20088    751519  751508  0 22:59 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20088    751542  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfsd
+u20088    751557  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20088    751564  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u20088    751584  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20088    751593  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20088    751605  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20088    751617  751470  0 22:59 ?        00:00:00 sshd: u20088@pts/16
+u20088    751619  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20088    751623  751508  0 22:59 ?        00:00:00 /usr/libexec/goa-daemon
+u20088    751624  751617  0 22:59 pts/16   00:00:00 -bash
+u20088    751633  751508  0 22:59 ?        00:00:00 /usr/libexec/goa-identity-se
+u20088    751661  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      751830     912  0 23:00 ?        00:00:00 sshd: u17063 [priv]
+u17063    751885  751830  0 23:00 ?        00:00:00 sshd: u17063@pts/4
+u17063    751886  751885  0 23:00 pts/4    00:00:00 -bash
+root      751927       2  0 23:01 ?        00:00:00 [kworker/8:2-events]
+root      751930     912  0 23:01 ?        00:00:00 sshd: u16019 [priv]
+root      751936       2  0 23:01 ?        00:00:00 [kworker/u64:1-events_unboun
+root      751939       2  0 23:01 ?        00:00:00 [kworker/7:1-events]
+u16019    751943       1  0 23:01 ?        00:00:00 /lib/systemd/systemd --user
+u16019    751944  751943  0 23:01 ?        00:00:00 (sd-pam)
+u16019    751950  751943  0 23:01 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u16019    751952  751943  0 23:01 ?        00:00:00 /usr/libexec/tracker-miner-f
+u16019    751955  751943  0 23:01 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u16019    751969  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfsd
+u16019    751993  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u16019    751999  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u16019    752018  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u16019    752026  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u16019    752040  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u16019    752048  751930  0 23:01 ?        00:00:00 sshd: u16019@pts/18
+u16019    752052  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u16019    752056  751943  0 23:01 ?        00:00:00 /usr/libexec/goa-daemon
+u16019    752057  752048  0 23:01 pts/18   00:00:00 -bash
+u16019    752066  751943  0 23:01 ?        00:00:00 /usr/libexec/goa-identity-se
+root      752115       2  0 23:02 ?        00:00:00 [kworker/11:2-cgroup_destroy
+root      752125       2  0 23:02 ?        00:00:00 [kworker/6:2-rcu_par_gp]
+root      752126       2  0 23:02 ?        00:00:00 [kworker/9:1-events]
+root      752132       2  0 23:02 ?        00:00:00 [kworker/u64:2-events_unboun
+u17063    752171  751886  0 23:02 pts/4    00:00:00 script
+u17063    752172  752171  0 23:02 pts/2    00:00:00 bash -i
+u16019    752197  752057  0 23:02 pts/18   00:00:00 script -a
+u16019    752198  752197  0 23:02 pts/3    00:00:00 bash -i
+u17022    752338  749109  0 23:04 pts/17   00:00:00 -sh
+u18075    752420  748806  0 23:05 pts/25   00:00:00 vi script
+u17063    752492  751019  5 23:07 ?        00:00:00 /usr/libexec/tracker-store
+u20052    752502  745537  0 23:07 pts/10   00:00:00 ps -ef
+]0;u20052@solgae: ~u20052@solgae:~$ ps -u
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+u20052    745294  0.0  0.0  20816  5224 pts/7    Ss   22:00   0:00 -bash
+u20052    745536  0.0  0.0  18144  2296 pts/7    R+   22:04   0:00 script
+u20052    745537  0.0  0.0  21320  5656 pts/10   Ss   22:04   0:00 bash -i
+u20052    747598  0.0  0.0  18016   528 pts/10   T    22:29   0:00 sleep 300
+u20052    748613  0.0  0.0  18016   592 pts/10   T    22:36   0:00 sleep 500
+u20052    752516  0.0  0.0  21432  3364 pts/10   R+   23:07   0:00 ps -u
+]0;u20052@solgae: ~u20052@solgae:~$ ps axu
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 171620 13900 ?        Ss    4월15   4:05 /sbin/init 
+root           2  0.0  0.0      0     0 ?        S     4월15   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<    4월15   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<    4월15   0:00 [rcu_par_gp
+root           6  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/0:
+root           8  0.0  0.0      0     0 ?        I<    4월15   0:00 [mm_percpu_
+root           9  0.0  0.0      0     0 ?        S     4월15   0:00 [ksoftirqd/
+root          10  0.1  0.0      0     0 ?        I     4월15  18:13 [rcu_sched]
+root          11  0.0  0.0      0     0 ?        S     4월15   0:03 [migration/
+root          12  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          14  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/0]
+root          15  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/1]
+root          16  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          17  0.0  0.0      0     0 ?        S     4월15   0:03 [migration/
+root          18  0.0  0.0      0     0 ?        S     4월15   0:00 [ksoftirqd/
+root          20  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/1:
+root          21  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/2]
+root          22  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          23  0.0  0.0      0     0 ?        S     4월15   0:10 [migration/
+root          24  0.0  0.0      0     0 ?        S     4월15   0:00 [ksoftirqd/
+root          26  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/2:
+root          27  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/3]
+root          28  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          29  0.0  0.0      0     0 ?        S     4월15   0:03 [migration/
+root          30  0.0  0.0      0     0 ?        S     4월15   0:00 [ksoftirqd/
+root          32  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/3:
+root          33  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/4]
+root          34  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          35  0.0  0.0      0     0 ?        S     4월15   0:03 [migration/
+root          36  0.0  0.0      0     0 ?        S     4월15   0:00 [ksoftirqd/
+root          38  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/4:
+root          39  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/5]
+root          40  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          41  0.0  0.0      0     0 ?        S     4월15   0:03 [migration/
+root          42  0.0  0.0      0     0 ?        S     4월15   0:00 [ksoftirqd/
+root          44  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/5:
+root          45  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/6]
+root          46  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          47  0.0  0.0      0     0 ?        S     4월15   0:05 [migration/
+root          48  0.0  0.0      0     0 ?        S     4월15   1:17 [ksoftirqd/
+root          50  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/6:
+root          51  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/7]
+root          52  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          53  0.0  0.0      0     0 ?        S     4월15   0:06 [migration/
+root          54  0.0  0.0      0     0 ?        S     4월15   0:08 [ksoftirqd/
+root          56  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/7:
+root          57  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/8]
+root          58  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          59  0.0  0.0      0     0 ?        S     4월15   0:06 [migration/
+root          60  0.0  0.0      0     0 ?        S     4월15   0:04 [ksoftirqd/
+root          62  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/8:
+root          63  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/9]
+root          64  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          65  0.0  0.0      0     0 ?        S     4월15   0:06 [migration/
+root          66  0.0  0.0      0     0 ?        S     4월15   0:03 [ksoftirqd/
+root          68  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/9:
+root          69  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/10]
+root          70  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          71  0.0  0.0      0     0 ?        S     4월15   0:06 [migration/
+root          72  0.0  0.0      0     0 ?        S     4월15   0:03 [ksoftirqd/
+root          74  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/10
+root          75  0.0  0.0      0     0 ?        S     4월15   0:00 [cpuhp/11]
+root          76  0.0  0.0      0     0 ?        S     4월15   0:00 [idle_injec
+root          77  0.0  0.0      0     0 ?        S     4월15   0:06 [migration/
+root          78  0.0  0.0      0     0 ?        S     4월15   0:03 [ksoftirqd/
+root          80  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/11
+root          81  0.0  0.0      0     0 ?        S     4월15   0:00 [kdevtmpfs]
+root          82  0.0  0.0      0     0 ?        I<    4월15   0:00 [netns]
+root          83  0.0  0.0      0     0 ?        S     4월15   0:00 [rcu_tasks_
+root          84  0.0  0.0      0     0 ?        S     4월15   0:00 [rcu_tasks_
+root          85  0.0  0.0      0     0 ?        S     4월15   0:00 [rcu_tasks_
+root          86  0.0  0.0      0     0 ?        S     4월15   0:00 [kauditd]
+root          92  0.0  0.0      0     0 ?        S     4월15   0:01 [khungtaskd
+root          93  0.0  0.0      0     0 ?        S     4월15   0:00 [oom_reaper
+root          94  0.0  0.0      0     0 ?        I<    4월15   0:00 [writeback]
+root          95  0.0  0.0      0     0 ?        S     4월15   0:00 [kcompactd0
+root          96  0.0  0.0      0     0 ?        SN    4월15   0:00 [ksmd]
+root          97  0.0  0.0      0     0 ?        SN    4월15   0:00 [khugepaged
+root         143  0.0  0.0      0     0 ?        I<    4월15   0:00 [kintegrity
+root         144  0.0  0.0      0     0 ?        I<    4월15   0:00 [kblockd]
+root         145  0.0  0.0      0     0 ?        I<    4월15   0:00 [blkcg_punt
+root         146  0.0  0.0      0     0 ?        I<    4월15   0:00 [tpm_dev_wq
+root         147  0.0  0.0      0     0 ?        I<    4월15   0:00 [ata_sff]
+root         148  0.0  0.0      0     0 ?        I<    4월15   0:00 [md]
+root         149  0.0  0.0      0     0 ?        I<    4월15   0:00 [edac-polle
+root         150  0.0  0.0      0     0 ?        I<    4월15   0:00 [devfreq_wq
+root         152  0.0  0.0      0     0 ?        S     4월15   0:00 [watchdogd]
+root         155  0.0  0.0      0     0 ?        I<    4월15   0:00 [pm_wq]
+root         159  0.0  0.0      0     0 ?        S     4월15   0:00 [kswapd0]
+root         160  0.0  0.0      0     0 ?        S     4월15   0:00 [ecryptfs-k
+root         162  0.0  0.0      0     0 ?        I<    4월15   0:00 [kthrotld]
+root         164  0.0  0.0      0     0 ?        I<    4월15   0:00 [acpi_therm
+root         165  0.0  0.0      0     0 ?        S     4월15   0:00 [scsi_eh_0]
+root         166  0.0  0.0      0     0 ?        I<    4월15   0:00 [scsi_tmf_0
+root         167  0.0  0.0      0     0 ?        S     4월15   0:00 [scsi_eh_1]
+root         168  0.0  0.0      0     0 ?        I<    4월15   0:00 [scsi_tmf_1
+root         170  0.0  0.0      0     0 ?        I<    4월15   0:00 [vfio-irqfd
+root         171  0.0  0.0      0     0 ?        I<    4월15   0:00 [ipv6_addrc
+root         181  0.0  0.0      0     0 ?        I<    4월15   0:00 [kstrp]
+root         184  0.0  0.0      0     0 ?        I<    4월15   0:00 [zswap-shri
+root         185  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/u6
+root         190  0.0  0.0      0     0 ?        I<    4월15   0:00 [charger_ma
+root         195  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/4:
+root         248  0.0  0.0      0     0 ?        S     4월15   0:00 [scsi_eh_2]
+root         249  0.0  0.0      0     0 ?        I<    4월15   0:00 [scsi_tmf_2
+root         254  0.0  0.0      0     0 ?        I<    4월15   0:05 [kworker/6:
+root         255  0.0  0.0      0     0 ?        I<    4월15   0:08 [kworker/8:
+root         259  0.0  0.0      0     0 ?        I<    4월15   0:07 [kworker/7:
+root         260  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/2:
+root         261  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/3:
+root         262  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/0:
+root         280  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/1:
+root         282  0.0  0.0      0     0 ?        I<    4월15   0:00 [kworker/5:
+root         283  0.0  0.0      0     0 ?        S     4월15   0:53 [jbd2/sda5-
+root         284  0.0  0.0      0     0 ?        I<    4월15   0:00 [ext4-rsv-c
+root         298  0.0  0.0      0     0 ?        I<    4월15   0:08 [kworker/11
+root         329  0.0  1.4 464356 171872 ?       S<s   4월15   9:10 /lib/system
+root         331  0.0  0.0      0     0 ?        I<    4월15   0:08 [kworker/9:
+root         362  0.0  0.0   1076     4 ?        S     4월15   0:00 bpfilter_um
+root         377  0.0  0.0      0     0 ?        S<    4월15   0:00 [loop0]
+root         378  0.0  0.0      0     0 ?        S<    4월15   0:00 [loop1]
+root         380  0.0  0.0      0     0 ?        S<    4월15   0:00 [loop2]
+root         383  0.0  0.0      0     0 ?        S<    4월15   0:00 [loop3]
+root         385  0.0  0.0      0     0 ?        S<    4월15   0:00 [loop4]
+root         389  0.0  0.0  24604  8020 ?        Ss    4월15   0:04 /lib/system
+root         390  0.0  0.0      0     0 ?        S<    4월15   0:00 [loop5]
+root         391  0.0  0.0      0     0 ?        S<    4월15   0:00 [loop6]
+root         483  0.0  0.0      0     0 ?        I<    4월15   0:08 [kworker/10
+root         554  0.0  0.0      0     0 ?        I<    4월15   0:00 [cryptd]
+root         555  0.0  0.0      0     0 ?        SN    4월15   0:00 [kipmi0]
+root         569  0.0  0.0      0     0 ?        I<    4월15   0:00 [ttm_swap]
+systemd+     767  0.0  0.1  24364 13588 ?        Ss    4월15   0:17 /lib/system
+systemd+     768  0.0  0.0  90456  6316 ?        Ssl   4월15   0:02 /lib/system
+root         772  0.0  0.0 249244  8684 ?        Ssl   4월15   3:38 /usr/lib/ac
+root         773  0.0  0.0   2548   780 ?        Ss    4월15   0:00 /usr/sbin/a
+avahi        776  0.0  0.0   9076  4636 ?        Ss    4월15  10:19 avahi-daemo
+root         777  0.0  0.0  19352  3128 ?        Ss    4월15   0:02 /usr/sbin/c
+message+     779  0.0  0.0  13140  9232 ?        Ss    4월15   5:29 /usr/bin/db
+root         780  0.1  0.1 821376 20124 ?        Ssl   4월15  18:31 /usr/sbin/N
+root         788  0.0  0.0  81944  3704 ?        Ssl   4월15   1:53 /usr/sbin/i
+root         790  0.0  0.1  49256 20124 ?        Ss    4월15   0:00 /usr/bin/py
+root         793  0.0  0.1 235208 13156 ?        Ssl   4월15  12:24 /usr/lib/po
+syslog       795  0.0  0.0 224328  5348 ?        Ssl   4월15   2:40 /usr/sbin/r
+root         799  0.0  0.2 2412632 29664 ?       Ssl   4월15   1:35 /usr/lib/sn
+root         800  0.0  0.0 245536  6164 ?        Ssl   4월15   0:00 /usr/libexe
+root         801  0.0  0.0  18060  9672 ?        Ss    4월15   0:21 /lib/system
+root         803  0.0  0.1 393024 12684 ?        Ssl   4월15   0:09 /usr/lib/ud
+root         804  0.0  0.0  13688  4904 ?        Ss    4월15   0:07 /sbin/wpa_s
+avahi        809  0.0  0.0   8352   328 ?        S     4월15   0:00 avahi-daemo
+root         877  0.0  0.1 127784 22736 ?        Ssl   4월15   0:00 /usr/bin/py
+root         878  0.0  0.0 313760 10676 ?        Ssl   4월15   0:02 /usr/sbin/M
+root         904  0.0  0.0 249416  8400 ?        Ssl   4월15   0:01 /usr/sbin/g
+root         912  0.0  0.0  12184  7360 ?        Ss    4월15   1:48 sshd: /usr/
+colord       944  0.0  0.1 256540 14960 ?        Ssl   4월15   0:02 /usr/libexe
+root         947  0.0  0.0 176740  9012 ?        Sl    4월15   0:01 gdm-session
+gdm          966  0.0  0.0  19196 10324 ?        Ss    4월15   0:09 /lib/system
+gdm          967  0.0  0.0 168928  3548 ?        S     4월15   0:00 (sd-pam)
+gdm          983  0.0  0.1 814676 14216 ?        S<sl  4월15   0:00 /usr/bin/pu
+gdm          985  0.0  0.2 595196 24744 ?        SNsl  4월15   0:00 /usr/libexe
+gdm          986  0.0  0.0 171580  5820 tty1     Ssl+  4월15   0:00 /usr/lib/gd
+gdm          988  0.0  0.0   7560  4568 ?        Ss    4월15   0:00 /usr/bin/db
+rtkit        992  0.0  0.0 152940  3012 ?        SNsl  4월15   0:25 /usr/libexe
+gdm         1009  0.0  0.0   5300  1048 tty1     S+    4월15   0:00 dbus-run-se
+gdm         1010  0.0  0.0   7656  4788 tty1     S+    4월15   0:00 dbus-daemon
+gdm         1011  0.0  0.1 420236 15200 tty1     Sl+   4월15   0:01 /usr/libexe
+gdm         1026  0.0  0.0 249640  7496 ?        Ssl   4월15   0:00 /usr/libexe
+gdm         1048  0.0  0.0 312808  6344 ?        Sl    4월15   0:00 /usr/libexe
+gdm         1050  0.0  0.0 323860  9048 ?        Ssl   4월15   0:39 /usr/libexe
+gdm         1055  0.0  0.0 245632  5784 ?        Ssl   4월15   0:00 /usr/libexe
+gdm         1064  0.0  0.0 326660  8748 ?        Ssl   4월15   1:01 /usr/libexe
+gdm         1069  0.0  0.0 248040  6296 ?        Ssl   4월15   0:00 /usr/libexe
+gdm         1077  0.0  0.0 245808  6088 ?        Ssl   4월15   0:00 /usr/libexe
+gdm         1081  0.0  0.2 556076 35984 ?        Sl    4월15   0:02 /usr/libexe
+gdm         1123  0.0  2.2 6334688 271868 tty1   Sl+   4월15  13:54 /usr/bin/gn
+gdm         1131  0.0  0.0 324688  8804 ?        Sl    4월15   0:02 /usr/libexe
+root        1133  0.0  0.0 262128  9812 ?        Ssl   4월15   0:02 /usr/lib/up
+whoopsie    1158  0.0  0.1 326864 15732 ?        Ssl   4월15   0:02 /usr/bin/wh
+kernoops    1174  0.0  0.0  11264   444 ?        Ss    4월15   0:33 /usr/sbin/k
+kernoops    1178  0.0  0.0  11264   444 ?        Ss    4월15   0:33 /usr/sbin/k
+root        2044  0.0  0.0  38044  4616 ?        Ss    4월15   0:05 /usr/lib/po
+postfix     2046  0.0  0.0  38504  6128 ?        S     4월15   0:01 qmgr -l -t 
+gdm         2087  0.0  0.0 305384  6392 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2092  0.0  0.0   7116  4076 tty1     S+    4월15   0:00 /usr/bin/db
+gdm         2101  0.0  0.3 2201076 42892 tty1    Sl+   4월15   0:00 /usr/bin/Xw
+gdm         2117  0.0  0.0 245528  4516 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2127  0.0  0.2 2940112 27540 tty1    Sl+   4월15   0:01 /usr/bin/gj
+gdm         2129  0.0  0.0 162772  6808 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2141  0.0  0.0 474716 10480 tty1     Sl+   4월15   0:05 /usr/libexe
+gdm         2143  0.0  0.1 349216 21320 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2144  0.0  0.1 509020 24396 tty1     Sl+   4월15   0:08 /usr/libexe
+gdm         2145  0.0  0.1 349556 21844 tty1     Sl+   4월15   0:01 /usr/libexe
+gdm         2146  0.0  0.0 258444 11408 tty1     Sl+   4월15   0:03 /usr/libexe
+gdm         2147  0.0  0.0 393300  5900 tty1     Sl+   4월15   0:01 /usr/libexe
+gdm         2148  0.0  0.0 325088  9864 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2149  0.0  0.1 383548 15900 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2150  0.0  0.1 766024 23588 tty1     Sl+   4월15   0:01 /usr/libexe
+gdm         2151  0.0  0.0 245440  6096 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2153  0.0  0.0 329280  9052 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2154  0.0  0.0 319588  6528 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2155  0.0  0.0 321656  7412 tty1     Sl+   4월15   0:47 /usr/libexe
+gdm         2156  0.0  0.1 424468 22784 tty1     Sl+   4월15   0:01 /usr/libexe
+gdm         2202  0.0  0.1 352124 14936 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2280  0.0  0.0 394612  8268 tty1     Sl    4월15   0:00 ibus-daemon
+gdm         2285  0.0  0.0 172636  7028 tty1     Sl    4월15   0:00 /usr/libexe
+gdm         2287  0.0  0.4 2378708 49148 tty1    Sl    4월15   0:00 /usr/libexe
+gdm         2292  0.0  0.0 246436  7168 tty1     Sl+   4월15   0:00 /usr/libexe
+gdm         2297  0.0  0.0 172628  6948 tty1     Sl    4월15   0:00 /usr/libexe
+gdm         2365  0.0  0.0 156100  5436 tty1     Sl+   4월15   0:00 /usr/libexe
+test        2680  599 19.6 2445648 2406072 ?     SNsl  4월15 107233:49 /home/te
+root       60877  0.0  0.0      0     0 ?        I<    4월16   0:00 [xfsalloc]
+root       60879  0.0  0.0      0     0 ?        I<    4월16   0:00 [xfs_mru_ca
+root       60890  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsIO]
+root       60891  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60892  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60893  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60894  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60895  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60896  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60897  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60898  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60899  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60900  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60901  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60902  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsCommit]
+root       60903  0.0  0.0      0     0 ?        S     4월16   0:00 [jfsSync]
+root       72734  0.0  0.0  11296  7996 ?        Ss    4월16   1:11 /usr/sbin/a
+root      480209  0.0  0.0      0     0 ?        S<    4월23   0:00 [loop7]
+root      628588  0.3  0.0      0     0 ?        I     4월26   9:03 [kworker/2:
+root      668182  0.0  0.0      0     0 ?        I     4월26   0:07 [kworker/0:
+root      677405  0.0  0.0      0     0 ?        I     4월26   0:01 [kworker/1:
+www-data  692454  0.0  0.0 2002784 6296 ?        Sl   00:00   0:00 /usr/sbin/apa
+www-data  692455  0.0  0.0 2003000 8248 ?        Sl   00:00   0:00 /usr/sbin/apa
+root      692520  0.0  0.0  38800  9604 ?        Ss   00:00   0:00 /usr/sbin/cup
+root      692522  0.0  0.1 187960 20364 ?        Ssl  00:00   0:02 /usr/sbin/cup
+lp        692532  0.0  0.0  15336  6612 ?        S    00:00   0:00 /usr/lib/cups
+lp        692533  0.0  0.0  15336  6692 ?        S    00:00   0:00 /usr/lib/cups
+gdm       703317  0.0  0.0 172184  6232 ?        Ssl  06:50   0:00 /usr/libexec/
+u20084    726590  0.0  0.0  19080 10452 ?        Ss   18:07   0:01 /lib/systemd/
+u20084    726591  0.0  0.0 172884  5548 ?        S    18:07   0:00 (sd-pam)
+u20084    726600  0.0  0.2 595068 24964 ?        SNsl 18:07   0:01 /usr/libexec/
+u20084    726603  0.0  0.0   7392  4580 ?        Ss   18:07   0:01 /usr/bin/dbus
+u20084    726632  0.0  0.0 249640  7664 ?        Ssl  18:07   0:00 /usr/libexec/
+u20084    726641  0.0  0.0 312808  6412 ?        Sl   18:07   0:00 /usr/libexec/
+u20084    726648  0.0  0.0 323864  9168 ?        Ssl  18:07   0:02 /usr/libexec/
+u20084    726661  0.0  0.0 245632  5920 ?        Ssl  18:07   0:00 /usr/libexec/
+u20084    726669  0.0  0.0 326656  8992 ?        Ssl  18:07   0:00 /usr/libexec/
+u20084    726678  0.0  0.0 248040  6500 ?        Ssl  18:07   0:00 /usr/libexec/
+u20084    726692  0.0  0.0 245808  6232 ?        Ssl  18:07   0:00 /usr/libexec/
+u20084    726702  0.0  0.2 556072 36108 ?        Sl   18:07   0:00 /usr/libexec/
+u20084    726713  0.0  0.0 324688  8868 ?        Sl   18:07   0:00 /usr/libexec/
+u20084    726743  0.0  0.0 172184  6388 ?        Ssl  18:07   0:00 /usr/libexec/
+root      729138  0.0  0.0      0     0 ?        I    18:40   0:00 [kworker/3:2-
+root      729430  0.0  0.0      0     0 ?        I    18:42   0:00 [kworker/4:0-
+u16082    732365  0.0  0.0  19060 10384 ?        Ss   19:50   0:00 /lib/systemd/
+u16082    732366  0.0  0.0 172884  5548 ?        S    19:50   0:00 (sd-pam)
+u16082    732375  0.0  0.2 595052 24656 ?        SNsl 19:50   0:00 /usr/libexec/
+u16082    732379  0.0  0.0   7392  4628 ?        Ss   19:50   0:00 /usr/bin/dbus
+u16082    732408  0.0  0.0 249640  7536 ?        Ssl  19:50   0:00 /usr/libexec/
+u16082    732416  0.0  0.0 312808  6092 ?        Sl   19:50   0:00 /usr/libexec/
+u16082    732422  0.0  0.0 323864  9220 ?        Ssl  19:50   0:02 /usr/libexec/
+u16082    732440  0.0  0.0 245632  5580 ?        Ssl  19:50   0:00 /usr/libexec/
+u16082    732450  0.0  0.0 326656  8920 ?        Ssl  19:50   0:00 /usr/libexec/
+u16082    732463  0.0  0.0 248040  6340 ?        Ssl  19:50   0:00 /usr/libexec/
+u16082    732476  0.0  0.0 245808  6088 ?        Ssl  19:50   0:00 /usr/libexec/
+u16082    732480  0.0  0.2 556072 36332 ?        Sl   19:50   0:00 /usr/libexec/
+u16082    732490  0.0  0.0 324688  9028 ?        Sl   19:50   0:00 /usr/libexec/
+u16082    732517  0.0  0.0 172184  6300 ?        Ssl  19:50   0:00 /usr/libexec/
+root      734339  0.2  0.0      0     0 ?        I    20:21   0:20 [kworker/2:0-
+root      734779  0.0  0.0      0     0 ?        I    20:25   0:00 [kworker/1:2-
+u16082    735072  0.0  0.0  18016   596 ?        S    20:27   0:00 sleep 30000
+root      735125  0.0  0.0      0     0 ?        I    20:28   0:00 [kworker/5:1-
+u20084    735368  0.0  0.0  18016   584 ?        S    20:30   0:00 sleep 10000
+u17056    737681  0.0  0.0  19064 10352 ?        Ss   20:48   0:00 /lib/systemd/
+u17056    737682  0.0  0.0 172884  5552 ?        S    20:48   0:00 (sd-pam)
+u17056    737691  0.0  0.2 595068 24796 ?        SNsl 20:48   0:00 /usr/libexec/
+u17056    737694  0.0  0.0   7392  4576 ?        Ss   20:48   0:00 /usr/bin/dbus
+u17056    737725  0.0  0.0 249640  7620 ?        Ssl  20:48   0:00 /usr/libexec/
+u17056    737732  0.0  0.0 312808  6536 ?        Sl   20:48   0:00 /usr/libexec/
+u17056    737735  0.0  0.0 323864  9224 ?        Ssl  20:48   0:01 /usr/libexec/
+u17056    737757  0.0  0.0 245632  5664 ?        Ssl  20:48   0:00 /usr/libexec/
+u17056    737765  0.0  0.0 326656  8792 ?        Ssl  20:48   0:00 /usr/libexec/
+u17056    737776  0.0  0.0 248040  6392 ?        Ssl  20:48   0:00 /usr/libexec/
+u17056    737792  0.0  0.0 245808  6176 ?        Ssl  20:48   0:00 /usr/libexec/
+u17056    737796  0.0  0.2 556072 36324 ?        Sl   20:48   0:00 /usr/libexec/
+u17056    737806  0.0  0.0 324688  8776 ?        Sl   20:48   0:00 /usr/libexec/
+u17056    737833  0.0  0.0 172184  6336 ?        Ssl  20:48   0:00 /usr/libexec/
+root      737849  0.0  0.0  13980  9008 ?        Ss   20:49   0:00 sshd: u20013 
+u20013    737853  0.0  0.0  18968 10292 ?        Ss   20:49   0:00 /lib/systemd/
+u20013    737854  0.0  0.0 172884  5552 ?        S    20:49   0:00 (sd-pam)
+u20013    737861  0.0  0.1 290288 14384 ?        Ssl  20:49   0:00 /usr/bin/puls
+u20013    737863  0.0  0.2 595048 24744 ?        SNsl 20:49   0:00 /usr/libexec/
+u20013    737870  0.0  0.0   7396  4528 ?        Ss   20:49   0:00 /usr/bin/dbus
+u20013    737889  0.0  0.0 249636  7652 ?        Ssl  20:49   0:00 /usr/libexec/
+u20013    737904  0.0  0.0 312808  6516 ?        Sl   20:49   0:00 /usr/libexec/
+u20013    737911  0.0  0.0 323844  9172 ?        Ssl  20:49   0:01 /usr/libexec/
+u20013    737921  0.0  0.0 245632  5608 ?        Ssl  20:49   0:00 /usr/libexec/
+u20013    737931  0.0  0.0 326656  8848 ?        Ssl  20:49   0:00 /usr/libexec/
+u20013    737939  0.0  0.0 248040  6520 ?        Ssl  20:49   0:00 /usr/libexec/
+u20013    737948  0.0  0.0 245808  6176 ?        Ssl  20:49   0:00 /usr/libexec/
+u20013    737957  0.0  0.2 556072 36392 ?        Sl   20:49   0:00 /usr/libexec/
+u20013    737969  0.0  0.0  14112  6108 ?        S    20:49   0:00 sshd: u20013@
+u20013    737976  0.0  0.0 324688  8916 ?        Sl   20:49   0:00 /usr/libexec/
+u20013    737977  0.0  0.0  20816  4992 pts/8    Ss+  20:49   0:00 -bash
+u20013    738005  0.0  0.0 172184  6292 ?        Ssl  20:49   0:00 /usr/libexec/
+root      738750  0.0  0.0  13980  9220 ?        Ss   21:03   0:00 sshd: u20055 
+u20055    738753  0.0  0.0  19076 10484 ?        Ss   21:03   0:00 /lib/systemd/
+u20055    738754  0.0  0.0 172884  5548 ?        S    21:03   0:00 (sd-pam)
+u20055    738761  0.0  0.1 290288 14388 ?        Ssl  21:03   0:00 /usr/bin/puls
+u20055    738763  0.0  0.2 595060 24832 ?        SNsl 21:03   0:00 /usr/libexec/
+u20055    738766  0.0  0.0   7396  4644 ?        Ss   21:03   0:00 /usr/bin/dbus
+u20055    738781  0.0  0.0 249648  7612 ?        Ssl  21:03   0:00 /usr/libexec/
+u20055    738804  0.0  0.0 312808  6592 ?        Sl   21:03   0:00 /usr/libexec/
+u20055    738812  0.0  0.0 323848  9216 ?        Ssl  21:03   0:01 /usr/libexec/
+u20055    738828  0.0  0.0 245632  5856 ?        Ssl  21:03   0:00 /usr/libexec/
+u20055    738836  0.0  0.0 326656  7592 ?        Ssl  21:03   0:00 /usr/libexec/
+u20055    738845  0.0  0.0 248040  6520 ?        Ssl  21:03   0:00 /usr/libexec/
+u20055    738863  0.0  0.0  14112  6220 ?        S    21:03   0:00 sshd: u20055@
+u20055    738864  0.0  0.0 245808  6128 ?        Ssl  21:03   0:00 /usr/libexec/
+u20055    738868  0.0  0.2 556072 36412 ?        Sl   21:03   0:00 /usr/libexec/
+u20055    738869  0.0  0.0  20816  5036 pts/14   Ss   21:03   0:00 -bash
+u20055    738878  0.0  0.0 324688  8916 ?        Sl   21:03   0:00 /usr/libexec/
+u20055    738905  0.0  0.0 172184  6444 ?        Ssl  21:03   0:00 /usr/libexec/
+u20055    738915  0.0  0.0  18144  2276 pts/14   S+   21:04   0:00 script
+u20055    738916  0.0  0.0  21320  5560 pts/15   Ss+  21:04   0:00 bash -i
+root      741159  0.0  0.0  13984  9244 ?        Ss   21:25   0:00 sshd: u19054 
+u19054    741209  0.0  0.0  18992 10368 ?        Ss   21:26   0:00 /lib/systemd/
+u19054    741210  0.0  0.0 172884  5552 ?        S    21:26   0:00 (sd-pam)
+u19054    741215  0.0  0.1 290288 14392 ?        Ssl  21:26   0:00 /usr/bin/puls
+u19054    741217  0.0  0.2 595064 24908 ?        SNsl 21:26   0:00 /usr/libexec/
+u19054    741220  0.0  0.0   7392  4588 ?        Ss   21:26   0:00 /usr/bin/dbus
+u19054    741233  0.0  0.0 249640  7548 ?        Ssl  21:26   0:00 /usr/libexec/
+u19054    741247  0.0  0.0 312808  6120 ?        Sl   21:26   0:00 /usr/libexec/
+u19054    741265  0.0  0.0 323856  9164 ?        Ssl  21:26   0:01 /usr/libexec/
+u19054    741271  0.0  0.0 245632  5716 ?        Ssl  21:26   0:00 /usr/libexec/
+u19054    741284  0.0  0.0 326656  7564 ?        Ssl  21:26   0:00 /usr/libexec/
+u19054    741294  0.0  0.0 248040  6368 ?        Ssl  21:26   0:00 /usr/libexec/
+u19054    741304  0.0  0.0 245808  6224 ?        Ssl  21:26   0:00 /usr/libexec/
+u19054    741314  0.0  0.2 556072 36408 ?        Sl   21:26   0:00 /usr/libexec/
+u19054    741322  0.0  0.0  13984  6132 ?        S    21:26   0:00 sshd: u19054@
+u19054    741326  0.0  0.0  21332  5500 pts/23   Ss   21:26   0:00 -bash
+u19054    741331  0.0  0.0 324688  8928 ?        Sl   21:26   0:00 /usr/libexec/
+u19054    741359  0.0  0.0 172184  6500 ?        Ssl  21:26   0:00 /usr/libexec/
+u19054    741826  0.0  0.0  18016   592 pts/23   T    21:28   0:00 sleep 1000
+u17056    741954  0.0  0.0  18016   588 ?        S    21:29   0:00 sleep 100000
+u17056    741960  0.0  0.0  18016   528 ?        S    21:29   0:00 sleep 100000
+u17056    741961  0.0  0.0  18016   532 ?        S    21:29   0:00 sleep 100000
+u19054    742840  0.0  0.0  18144  2368 pts/23   S+   21:35   0:00 script -a
+u19054    742841  0.0  0.0  21320  5548 pts/19   Ss+  21:35   0:00 bash -i
+u19054    742855  0.0  0.0  18016   592 pts/19   T    21:35   0:00 sleep 1000
+root      743117  0.0  0.0      0     0 ?        I    21:38   0:00 [kworker/4:2-
+root      743882  0.0  0.1 387864 23964 ?        Ssl  21:45   0:00 /usr/libexec/
+root      745172  0.0  0.0  13984  9184 ?        Ss   21:59   0:00 sshd: u20052 
+u20052    745178  0.0  0.0  19072 10364 ?        Ss   22:00   0:00 /lib/systemd/
+u20052    745179  0.0  0.0 172884  5552 ?        S    22:00   0:00 (sd-pam)
+u20052    745185  0.0  0.1 290288 14360 ?        Ssl  22:00   0:00 /usr/bin/puls
+u20052    745187  0.0  0.2 595064 24668 ?        SNsl 22:00   0:00 /usr/libexec/
+u20052    745190  0.0  0.0   7396  4572 ?        Ss   22:00   0:00 /usr/bin/dbus
+u20052    745215  0.0  0.0 249636  7616 ?        Ssl  22:00   0:00 /usr/libexec/
+u20052    745228  0.0  0.0 312808  6084 ?        Sl   22:00   0:00 /usr/libexec/
+u20052    745236  0.0  0.0 323844  9136 ?        Ssl  22:00   0:00 /usr/libexec/
+u20052    745250  0.0  0.0 245632  5716 ?        Ssl  22:00   0:00 /usr/libexec/
+u20052    745259  0.0  0.0 326656  8840 ?        Ssl  22:00   0:00 /usr/libexec/
+u20052    745267  0.0  0.0 248040  6564 ?        Ssl  22:00   0:00 /usr/libexec/
+u20052    745281  0.0  0.0 245808  6172 ?        Ssl  22:00   0:00 /usr/libexec/
+u20052    745291  0.0  0.2 556072 36212 ?        Sl   22:00   0:00 /usr/libexec/
+u20052    745292  0.0  0.0  14116  6128 ?        S    22:00   0:00 sshd: u20052@
+u20052    745294  0.0  0.0  20816  5224 pts/7    Ss   22:00   0:00 -bash
+u20052    745303  0.0  0.0 324688  8932 ?        Sl   22:00   0:00 /usr/libexec/
+u20052    745328  0.0  0.0 172180  6344 ?        Ssl  22:00   0:00 /usr/libexec/
+u20052    745536  0.0  0.0  18144  2296 pts/7    R+   22:04   0:00 script
+u20052    745537  0.0  0.0  21320  5656 pts/10   Ss   22:04   0:00 bash -i
+root      746418  0.0  0.0      0     0 ?        I    22:16   0:00 [kworker/0:1]
+root      746979  0.0  0.0  13984  9228 ?        Ss   22:22   0:00 sshd: u17022 
+u17022    746982  0.0  0.0  19076 10248 ?        Ss   22:22   0:00 /lib/systemd/
+u17022    746983  0.0  0.0 172884  5552 ?        S    22:22   0:00 (sd-pam)
+u17022    746989  0.0  0.1 290288 14264 ?        Ssl  22:22   0:00 /usr/bin/puls
+u17022    746991  0.0  0.2 521332 24732 ?        SNsl 22:22   0:00 /usr/libexec/
+u17022    746998  0.0  0.0   7396  4512 ?        Ss   22:22   0:00 /usr/bin/dbus
+u17022    747027  0.0  0.0 249640  7528 ?        Ssl  22:22   0:00 /usr/libexec/
+u17022    747032  0.0  0.0 312808  6216 ?        Sl   22:22   0:00 /usr/libexec/
+u17022    747035  0.0  0.0 323844  9104 ?        Ssl  22:22   0:00 /usr/libexec/
+u17022    747059  0.0  0.0 245632  5736 ?        Ssl  22:22   0:00 /usr/libexec/
+u17022    747068  0.0  0.0 326656  7532 ?        Ssl  22:22   0:00 /usr/libexec/
+u17022    747085  0.0  0.0 248040  6492 ?        Ssl  22:22   0:00 /usr/libexec/
+u17022    747088  0.0  0.0  14116  6128 ?        S    22:22   0:00 sshd: u17022@
+u17022    747092  0.0  0.0 245808  6024 ?        Ssl  22:22   0:00 /usr/libexec/
+u17022    747096  0.0  0.2 556072 36460 ?        Sl   22:22   0:00 /usr/libexec/
+u17022    747097  0.0  0.0  19436  3604 pts/6    Ss   22:22   0:00 -tcsh
+u17022    747107  0.0  0.0 324688  8892 ?        Sl   22:22   0:00 /usr/libexec/
+u17022    747530  0.0  0.0  18144  2300 pts/6    S+   22:28   0:00 script -a
+u17022    747531  0.0  0.0  19436  3572 pts/17   Ss   22:28   0:00 -csh -i
+u20052    747598  0.0  0.0  18016   528 pts/10   T    22:29   0:00 sleep 300
+root      747770  0.0  0.0  13980  9136 ?        Ss   22:32   0:00 sshd: u18075 
+u18075    747777  0.0  0.0  18984 10348 ?        Ss   22:32   0:00 /lib/systemd/
+u18075    747778  0.0  0.0 172884  5548 ?        S    22:32   0:00 (sd-pam)
+u18075    747786  0.0  0.1 290288 14212 ?        Ssl  22:32   0:00 /usr/bin/puls
+u18075    747788  0.0  0.2 595184 25136 ?        SNsl 22:32   0:00 /usr/libexec/
+u18075    747798  0.0  0.0   7392  4572 ?        Ss   22:32   0:00 /usr/bin/dbus
+u18075    747824  0.0  0.0 249640  7628 ?        Ssl  22:32   0:00 /usr/libexec/
+u18075    747829  0.0  0.0 312808  6544 ?        Sl   22:32   0:00 /usr/libexec/
+u18075    747837  0.0  0.0 323848  8936 ?        Ssl  22:32   0:00 /usr/libexec/
+u18075    747853  0.0  0.0 245632  5804 ?        Ssl  22:32   0:00 /usr/libexec/
+u18075    747862  0.0  0.0 326656  8996 ?        Ssl  22:32   0:00 /usr/libexec/
+u18075    747871  0.0  0.0 248040  6452 ?        Ssl  22:32   0:00 /usr/libexec/
+u18075    747888  0.0  0.0  14112  6040 ?        S    22:32   0:00 sshd: u18075@
+u18075    747889  0.0  0.0 245808  6020 ?        Ssl  22:32   0:00 /usr/libexec/
+u18075    747893  0.0  0.2 556072 36212 ?        Sl   22:32   0:00 /usr/libexec/
+u18075    747901  0.0  0.0 324688  8928 ?        Sl   22:32   0:00 /usr/libexec/
+u18075    747915  0.0  0.0  20816  5188 pts/21   Ss   22:32   0:00 -bash
+root      748017  0.0  0.0      0     0 ?        I    22:33   0:00 [kworker/7:0-
+root      748188  0.0  0.0      0     0 ?        I    22:33   0:00 [kworker/10:0
+root      748197  0.0  0.0  13980  9192 ?        Ss   22:33   0:00 sshd: u20077 
+u20077    748201  0.0  0.0  18988 10232 ?        Ss   22:33   0:00 /lib/systemd/
+u20077    748202  0.0  0.0 172884  5552 ?        S    22:33   0:00 (sd-pam)
+u20077    748208  0.0  0.1 290288 14368 ?        Ssl  22:33   0:00 /usr/bin/puls
+u20077    748210  0.0  0.2 521304 24756 ?        SNsl 22:33   0:00 /usr/libexec/
+u20077    748212  0.0  0.0   7396  4472 ?        Ss   22:33   0:00 /usr/bin/dbus
+u20077    748237  0.0  0.0 249652  7584 ?        Ssl  22:33   0:00 /usr/libexec/
+u20077    748251  0.0  0.0 312808  6520 ?        Sl   22:33   0:00 /usr/libexec/
+u20077    748259  0.0  0.0 323856  9128 ?        Ssl  22:33   0:00 /usr/libexec/
+u20077    748277  0.0  0.0 245632  5648 ?        Ssl  22:33   0:00 /usr/libexec/
+u20077    748287  0.0  0.0 326656  8832 ?        Ssl  22:33   0:00 /usr/libexec/
+u20077    748306  0.0  0.0 248040  6472 ?        Ssl  22:33   0:00 /usr/libexec/
+u20077    748307  0.0  0.0  14112  6100 ?        S    22:33   0:00 sshd: u20077@
+u20077    748311  0.0  0.0 245808  6156 ?        Ssl  22:33   0:00 /usr/libexec/
+u20077    748315  0.0  0.2 556072 36412 ?        Sl   22:33   0:00 /usr/libexec/
+u20077    748316  0.0  0.0  20816  5136 pts/20   Ss   22:33   0:00 -bash
+u20077    748327  0.0  0.0 398420  8848 ?        Sl   22:33   0:00 /usr/libexec/
+u20077    748360  0.0  0.0  18144  2296 pts/20   S+   22:34   0:00 script -a
+u20077    748361  0.0  0.0  20804  5028 pts/22   Ss+  22:34   0:00 bash -i
+u20052    748613  0.0  0.0  18016   592 pts/10   T    22:36   0:00 sleep 500
+u20077    748734  0.0  0.0  18016   596 pts/22   S    22:37   0:00 sleep 2000
+u18075    748805  0.0  0.0  18144  2164 pts/21   S+   22:38   0:00 script -a
+u18075    748806  0.0  0.0  21320  5720 pts/25   Ss   22:38   0:00 bash -i
+u17022    748872  0.0  0.0 172180  6500 ?        Ssl  22:38   0:00 /usr/libexec/
+u17022    749109  0.0  0.0  20932  5248 pts/17   S    22:40   0:00 bash
+root      749326  0.0  0.0  13984  9160 ?        Ss   22:43   0:00 sshd: u20057 
+u20057    749333  0.0  0.0  18996 10360 ?        Ss   22:44   0:00 /lib/systemd/
+u20057    749334  0.0  0.0 172884  5552 ?        S    22:44   0:00 (sd-pam)
+u20057    749340  0.0  0.1 290288 14344 ?        Ssl  22:44   0:00 /usr/bin/puls
+u20057    749342  0.0  0.2 595028 24640 ?        SNsl 22:44   0:00 /usr/libexec/
+u20057    749345  0.0  0.0   7392  4512 ?        Ss   22:44   0:00 /usr/bin/dbus
+u20057    749359  0.0  0.0 249640  7676 ?        Ssl  22:44   0:00 /usr/libexec/
+u20057    749383  0.0  0.0 312808  6136 ?        Sl   22:44   0:00 /usr/libexec/
+u20057    749390  0.0  0.0 323852  9256 ?        Ssl  22:44   0:00 /usr/libexec/
+u20057    749407  0.0  0.0 245632  5684 ?        Ssl  22:44   0:00 /usr/libexec/
+u20057    749416  0.0  0.0 326656  8828 ?        Ssl  22:44   0:00 /usr/libexec/
+u20057    749429  0.0  0.0 248040  6436 ?        Ssl  22:44   0:00 /usr/libexec/
+u20057    749443  0.0  0.0 245808  6044 ?        Ssl  22:44   0:00 /usr/libexec/
+u20057    749447  0.0  0.2 556072 36392 ?        Sl   22:44   0:00 /usr/libexec/
+u20057    749469  0.0  0.0  14116  6152 ?        S    22:44   0:00 sshd: u20057@
+u20057    749476  0.0  0.0 324688  8984 ?        Sl   22:44   0:00 /usr/libexec/
+u20057    749484  0.0  0.0  19444  3336 pts/26   Ss   22:44   0:00 -tcsh
+u20057    749501  0.0  0.0 172180  6228 ?        Ssl  22:44   0:00 /usr/libexec/
+u20057    749509  0.0  0.0  18144  2164 pts/26   S+   22:44   0:00 script
+u20057    749510  0.0  0.0  19440  3508 pts/27   Ss+  22:44   0:00 -csh -i
+u19054    749619  0.0  0.0  35116 10240 pts/19   T    22:46   0:00 vi script1
+root      749663  0.0  0.0      0     0 ?        I    22:46   0:00 [kworker/u64:
+u20077    749780  0.0  0.0  18016   596 pts/22   S    22:47   0:00 sleep 2000
+root      749932  0.0  0.0  13980  9228 ?        Ss   22:49   0:00 sshd: u14016 
+root      749938  0.0  0.0      0     0 ?        I    22:49   0:00 [kworker/9:2-
+u14016    749941  0.0  0.0  18996 10408 ?        Ss   22:49   0:00 /lib/systemd/
+u14016    749942  0.0  0.0 172884  5548 ?        S    22:49   0:00 (sd-pam)
+root      749947  0.0  0.0      0     0 ?        I    22:49   0:00 [kworker/3:1]
+u14016    749949  0.0  0.1 290288 14364 ?        Ssl  22:49   0:00 /usr/bin/puls
+u14016    749951  0.0  0.2 521304 24624 ?        SNsl 22:49   0:00 /usr/libexec/
+u14016    749958  0.0  0.0   7392  4468 ?        Ss   22:49   0:00 /usr/bin/dbus
+u14016    749987  0.0  0.0 249640  7524 ?        Ssl  22:49   0:00 /usr/libexec/
+u14016    749992  0.0  0.0 312808  5688 ?        Sl   22:49   0:00 /usr/libexec/
+u14016    749994  0.0  0.0 323852  9148 ?        Ssl  22:49   0:00 /usr/libexec/
+u14016    750011  0.0  0.0 245632  5768 ?        Ssl  22:49   0:00 /usr/libexec/
+u14016    750019  0.0  0.0 326656  8892 ?        Ssl  22:49   0:00 /usr/libexec/
+u14016    750028  0.0  0.0 248040  6524 ?        Ssl  22:49   0:00 /usr/libexec/
+u14016    750037  0.0  0.0 245808  6128 ?        Ssl  22:49   0:00 /usr/libexec/
+u14016    750048  0.0  0.2 556072 36460 ?        Sl   22:49   0:00 /usr/libexec/
+u14016    750055  0.0  0.0  14112  6216 ?        S    22:49   0:00 sshd: u14016@
+u14016    750059  0.0  0.0  20816  5136 pts/0    Ss   22:49   0:00 -bash
+u14016    750068  0.0  0.0 324688  8936 ?        Sl   22:49   0:00 /usr/libexec/
+u14016    750159  0.0  0.0  18144  2272 pts/0    S+   22:49   0:00 script -a
+u14016    750160  0.0  0.0  20804  5112 pts/29   Ss+  22:49   0:00 bash -i
+u20055    750454  0.0  0.0  18016   528 pts/15   T    22:50   0:00 sleep 1000
+u18075    750472  0.0  0.0 172180  6308 ?        Ssl  22:50   0:00 /usr/libexec/
+root      750730  0.0  0.0      0     0 ?        I    22:54   0:00 [kworker/8:1-
+root      750731  0.0  0.0      0     0 ?        I    22:54   0:00 [kworker/10:2
+root      750851  0.0  0.0      0     0 ?        I    22:55   0:00 [kworker/6:1-
+root      750866  0.0  0.0      0     0 ?        I    22:55   0:00 [kworker/11:1
+root      750868  0.0  0.0      0     0 ?        I    22:55   0:00 [kworker/u64:
+root      751016  0.0  0.0      0     0 ?        I    22:56   0:00 [kworker/5:0-
+u17063    751019  0.0  0.0  18992 10404 ?        Ss   22:56   0:00 /lib/systemd/
+u17063    751020  0.0  0.0 172884  5548 ?        S    22:56   0:00 (sd-pam)
+u17063    751028  0.0  0.2 521336 24752 ?        SNsl 22:56   0:00 /usr/libexec/
+u17063    751031  0.0  0.0   7392  4520 ?        Ss   22:56   0:00 /usr/bin/dbus
+u17063    751055  0.0  0.0 249636  7620 ?        Ssl  22:56   0:00 /usr/libexec/
+u17063    751065  0.0  0.0 312808  6248 ?        Sl   22:56   0:00 /usr/libexec/
+u17063    751071  0.0  0.0 323856  9216 ?        Ssl  22:56   0:00 /usr/libexec/
+u17063    751092  0.0  0.0 245632  5780 ?        Ssl  22:56   0:00 /usr/libexec/
+u17063    751101  0.0  0.0 326656  7540 ?        Ssl  22:56   0:00 /usr/libexec/
+u17063    751111  0.0  0.0 248040  6376 ?        Ssl  22:56   0:00 /usr/libexec/
+u17063    751128  0.0  0.0 245808  6116 ?        Ssl  22:56   0:00 /usr/libexec/
+u17063    751134  0.0  0.2 556072 36360 ?        Sl   22:56   0:00 /usr/libexec/
+u17063    751145  0.0  0.0 324688  8892 ?        Sl   22:56   0:00 /usr/libexec/
+postfix   751253  0.0  0.0  38312  6272 ?        S    22:57   0:00 pickup -l -t 
+root      751470  0.0  0.0  13984  9056 ?        Ss   22:58   0:00 sshd: u20088 
+u20088    751508  0.0  0.0  19000 10420 ?        Ss   22:59   0:00 /lib/systemd/
+u20088    751509  0.0  0.0 172884  5552 ?        S    22:59   0:00 (sd-pam)
+u20088    751514  0.0  0.1 290288 14276 ?        Ssl  22:59   0:00 /usr/bin/puls
+u20088    751516  0.0  0.2 595044 24816 ?        SNsl 22:59   0:00 /usr/libexec/
+u20088    751519  0.0  0.0   7392  4592 ?        Ss   22:59   0:00 /usr/bin/dbus
+u20088    751542  0.0  0.0 249644  7648 ?        Ssl  22:59   0:00 /usr/libexec/
+u20088    751557  0.0  0.0 312808  6492 ?        Sl   22:59   0:00 /usr/libexec/
+u20088    751564  0.0  0.0 323856  9252 ?        Ssl  22:59   0:00 /usr/libexec/
+u20088    751584  0.0  0.0 245632  5772 ?        Ssl  22:59   0:00 /usr/libexec/
+u20088    751593  0.0  0.0 326656  8944 ?        Ssl  22:59   0:00 /usr/libexec/
+u20088    751605  0.0  0.0 248040  6352 ?        Ssl  22:59   0:00 /usr/libexec/
+u20088    751617  0.0  0.0  13984  6124 ?        S    22:59   0:00 sshd: u20088@
+u20088    751619  0.0  0.0 245808  6088 ?        Ssl  22:59   0:00 /usr/libexec/
+u20088    751623  0.0  0.2 556072 36332 ?        Sl   22:59   0:00 /usr/libexec/
+u20088    751624  0.0  0.0  20816  5108 pts/16   Ss+  22:59   0:00 -bash
+u20088    751633  0.0  0.0 324688  8988 ?        Sl   22:59   0:00 /usr/libexec/
+u20088    751661  0.0  0.0 172180  6312 ?        Ssl  22:59   0:00 /usr/libexec/
+root      751830  0.0  0.0  13984  9188 ?        Ss   23:00   0:00 sshd: u17063 
+u17063    751885  0.0  0.0  14116  6216 ?        S    23:00   0:00 sshd: u17063@
+u17063    751886  0.0  0.0  20816  4992 pts/4    Ss   23:00   0:00 -bash
+root      751927  0.0  0.0      0     0 ?        I    23:01   0:00 [kworker/8:2-
+root      751930  0.0  0.0  13988  9076 ?        Ss   23:01   0:00 sshd: u16019 
+root      751936  0.0  0.0      0     0 ?        I    23:01   0:00 [kworker/u64:
+root      751939  0.0  0.0      0     0 ?        I    23:01   0:00 [kworker/7:1-
+u16019    751943  0.0  0.0  19004 10412 ?        Ss   23:01   0:00 /lib/systemd/
+u16019    751944  0.0  0.0 172884  5548 ?        S    23:01   0:00 (sd-pam)
+u16019    751950  0.0  0.1 290288 14384 ?        Ssl  23:01   0:00 /usr/bin/puls
+u16019    751952  0.0  0.2 521312 24592 ?        SNsl 23:01   0:00 /usr/libexec/
+u16019    751955  0.0  0.0   7392  4544 ?        Ss   23:01   0:00 /usr/bin/dbus
+u16019    751969  0.0  0.0 249636  7632 ?        Ssl  23:01   0:00 /usr/libexec/
+u16019    751993  0.0  0.0 312808  6496 ?        Sl   23:01   0:00 /usr/libexec/
+u16019    751999  0.0  0.0 323856  8896 ?        Ssl  23:01   0:00 /usr/libexec/
+u16019    752018  0.0  0.0 245632  5712 ?        Ssl  23:01   0:00 /usr/libexec/
+u16019    752026  0.0  0.0 326656  7532 ?        Ssl  23:01   0:00 /usr/libexec/
+u16019    752040  0.0  0.0 248040  6516 ?        Ssl  23:01   0:00 /usr/libexec/
+u16019    752048  0.0  0.0  13988  6028 ?        S    23:01   0:00 sshd: u16019@
+u16019    752052  0.0  0.0 245808  6084 ?        Ssl  23:01   0:00 /usr/libexec/
+u16019    752056  0.0  0.2 556072 36220 ?        Sl   23:01   0:00 /usr/libexec/
+u16019    752057  0.0  0.0  20816  5056 pts/18   Ss   23:01   0:00 -bash
+u16019    752066  0.0  0.0 324688  9028 ?        Sl   23:01   0:00 /usr/libexec/
+root      752115  0.0  0.0      0     0 ?        I    23:02   0:00 [kworker/11:2
+root      752125  0.0  0.0      0     0 ?        I    23:02   0:00 [kworker/6:2-
+root      752126  0.0  0.0      0     0 ?        I    23:02   0:00 [kworker/9:1-
+root      752132  0.0  0.0      0     0 ?        R    23:02   0:00 [kworker/u64:
+u17063    752171  0.1  0.0  18144  2344 pts/4    S+   23:02   0:00 script
+u17063    752172  0.0  0.0  20924  5224 pts/2    Ss+  23:02   0:00 bash -i
+u16019    752197  0.0  0.0  18144  2268 pts/18   S+   23:02   0:00 script -a
+u16019    752198  0.0  0.0  20804  5092 pts/3    Ss+  23:02   0:00 bash -i
+u17022    752338  0.0  0.0  19456  3596 pts/17   S+   23:04   0:00 -sh
+u18075    752420  0.1  0.0  34720 10044 pts/25   S+   23:05   0:00 vi script
+u17063    752492  2.0  0.2 444580 26692 ?        Ssl  23:07   0:00 /usr/libexec/
+u20052    752507  3.3  0.2 444568 26884 ?        Ssl  23:07   0:00 /usr/libexec/
+root      752521  0.5  0.0  12184  6980 ?        Ss   23:07   0:00 sshd: [accept
+sshd      752522  0.5  0.0  12184  4608 ?        S    23:07   0:00 sshd: [net]
+u20052    752523  0.0  0.0  21432  3396 pts/10   R+   23:07   0:00 ps axu
+]0;u20052@solgae: ~u20052@solgae:~$ sleep 1000 &
+[4] 752531
+]0;u20052@solgae: ~u20052@solgae:~$ kill -9 pid
+bash: kill: pid: arguments must be process or job IDs
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[2]-  Stopped                 sleep 300
+[3]+  Stopped                 sleep 500
+[4]   Running                 sleep 1000 &
+]0;u20052@solgae: ~u20052@solgae:~$ j[Kkill =[K-KILL
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+]0;u20052@solgae: ~u20052@solgae:~$ ps -f[Kef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0  4월15 ?      00:04:05 /sbin/init splash
+root           2       0  0  4월15 ?      00:00:00 [kthreadd]
+root           3       2  0  4월15 ?      00:00:00 [rcu_gp]
+root           4       2  0  4월15 ?      00:00:00 [rcu_par_gp]
+root           6       2  0  4월15 ?      00:00:00 [kworker/0:0H-kblockd]
+root           8       2  0  4월15 ?      00:00:00 [mm_percpu_wq]
+root           9       2  0  4월15 ?      00:00:00 [ksoftirqd/0]
+root          10       2  0  4월15 ?      00:18:13 [rcu_sched]
+root          11       2  0  4월15 ?      00:00:03 [migration/0]
+root          12       2  0  4월15 ?      00:00:00 [idle_inject/0]
+root          14       2  0  4월15 ?      00:00:00 [cpuhp/0]
+root          15       2  0  4월15 ?      00:00:00 [cpuhp/1]
+root          16       2  0  4월15 ?      00:00:00 [idle_inject/1]
+root          17       2  0  4월15 ?      00:00:03 [migration/1]
+root          18       2  0  4월15 ?      00:00:00 [ksoftirqd/1]
+root          20       2  0  4월15 ?      00:00:00 [kworker/1:0H-kblockd]
+root          21       2  0  4월15 ?      00:00:00 [cpuhp/2]
+root          22       2  0  4월15 ?      00:00:00 [idle_inject/2]
+root          23       2  0  4월15 ?      00:00:10 [migration/2]
+root          24       2  0  4월15 ?      00:00:00 [ksoftirqd/2]
+root          26       2  0  4월15 ?      00:00:00 [kworker/2:0H-kblockd]
+root          27       2  0  4월15 ?      00:00:00 [cpuhp/3]
+root          28       2  0  4월15 ?      00:00:00 [idle_inject/3]
+root          29       2  0  4월15 ?      00:00:03 [migration/3]
+root          30       2  0  4월15 ?      00:00:00 [ksoftirqd/3]
+root          32       2  0  4월15 ?      00:00:00 [kworker/3:0H]
+root          33       2  0  4월15 ?      00:00:00 [cpuhp/4]
+root          34       2  0  4월15 ?      00:00:00 [idle_inject/4]
+root          35       2  0  4월15 ?      00:00:03 [migration/4]
+root          36       2  0  4월15 ?      00:00:00 [ksoftirqd/4]
+root          38       2  0  4월15 ?      00:00:00 [kworker/4:0H-kblockd]
+root          39       2  0  4월15 ?      00:00:00 [cpuhp/5]
+root          40       2  0  4월15 ?      00:00:00 [idle_inject/5]
+root          41       2  0  4월15 ?      00:00:03 [migration/5]
+root          42       2  0  4월15 ?      00:00:00 [ksoftirqd/5]
+root          44       2  0  4월15 ?      00:00:00 [kworker/5:0H-kblockd]
+root          45       2  0  4월15 ?      00:00:00 [cpuhp/6]
+root          46       2  0  4월15 ?      00:00:00 [idle_inject/6]
+root          47       2  0  4월15 ?      00:00:05 [migration/6]
+root          48       2  0  4월15 ?      00:01:17 [ksoftirqd/6]
+root          50       2  0  4월15 ?      00:00:00 [kworker/6:0H-kblockd]
+root          51       2  0  4월15 ?      00:00:00 [cpuhp/7]
+root          52       2  0  4월15 ?      00:00:00 [idle_inject/7]
+root          53       2  0  4월15 ?      00:00:06 [migration/7]
+root          54       2  0  4월15 ?      00:00:08 [ksoftirqd/7]
+root          56       2  0  4월15 ?      00:00:00 [kworker/7:0H]
+root          57       2  0  4월15 ?      00:00:00 [cpuhp/8]
+root          58       2  0  4월15 ?      00:00:00 [idle_inject/8]
+root          59       2  0  4월15 ?      00:00:06 [migration/8]
+root          60       2  0  4월15 ?      00:00:04 [ksoftirqd/8]
+root          62       2  0  4월15 ?      00:00:00 [kworker/8:0H-kblockd]
+root          63       2  0  4월15 ?      00:00:00 [cpuhp/9]
+root          64       2  0  4월15 ?      00:00:00 [idle_inject/9]
+root          65       2  0  4월15 ?      00:00:06 [migration/9]
+root          66       2  0  4월15 ?      00:00:03 [ksoftirqd/9]
+root          68       2  0  4월15 ?      00:00:00 [kworker/9:0H-kblockd]
+root          69       2  0  4월15 ?      00:00:00 [cpuhp/10]
+root          70       2  0  4월15 ?      00:00:00 [idle_inject/10]
+root          71       2  0  4월15 ?      00:00:06 [migration/10]
+root          72       2  0  4월15 ?      00:00:03 [ksoftirqd/10]
+root          74       2  0  4월15 ?      00:00:00 [kworker/10:0H-kblockd]
+root          75       2  0  4월15 ?      00:00:00 [cpuhp/11]
+root          76       2  0  4월15 ?      00:00:00 [idle_inject/11]
+root          77       2  0  4월15 ?      00:00:06 [migration/11]
+root          78       2  0  4월15 ?      00:00:03 [ksoftirqd/11]
+root          80       2  0  4월15 ?      00:00:00 [kworker/11:0H-kblockd]
+root          81       2  0  4월15 ?      00:00:00 [kdevtmpfs]
+root          82       2  0  4월15 ?      00:00:00 [netns]
+root          83       2  0  4월15 ?      00:00:00 [rcu_tasks_kthre]
+root          84       2  0  4월15 ?      00:00:00 [rcu_tasks_rude_]
+root          85       2  0  4월15 ?      00:00:00 [rcu_tasks_trace]
+root          86       2  0  4월15 ?      00:00:00 [kauditd]
+root          92       2  0  4월15 ?      00:00:01 [khungtaskd]
+root          93       2  0  4월15 ?      00:00:00 [oom_reaper]
+root          94       2  0  4월15 ?      00:00:00 [writeback]
+root          95       2  0  4월15 ?      00:00:00 [kcompactd0]
+root          96       2  0  4월15 ?      00:00:00 [ksmd]
+root          97       2  0  4월15 ?      00:00:00 [khugepaged]
+root         143       2  0  4월15 ?      00:00:00 [kintegrityd]
+root         144       2  0  4월15 ?      00:00:00 [kblockd]
+root         145       2  0  4월15 ?      00:00:00 [blkcg_punt_bio]
+root         146       2  0  4월15 ?      00:00:00 [tpm_dev_wq]
+root         147       2  0  4월15 ?      00:00:00 [ata_sff]
+root         148       2  0  4월15 ?      00:00:00 [md]
+root         149       2  0  4월15 ?      00:00:00 [edac-poller]
+root         150       2  0  4월15 ?      00:00:00 [devfreq_wq]
+root         152       2  0  4월15 ?      00:00:00 [watchdogd]
+root         155       2  0  4월15 ?      00:00:00 [pm_wq]
+root         159       2  0  4월15 ?      00:00:00 [kswapd0]
+root         160       2  0  4월15 ?      00:00:00 [ecryptfs-kthrea]
+root         162       2  0  4월15 ?      00:00:00 [kthrotld]
+root         164       2  0  4월15 ?      00:00:00 [acpi_thermal_pm]
+root         165       2  0  4월15 ?      00:00:00 [scsi_eh_0]
+root         166       2  0  4월15 ?      00:00:00 [scsi_tmf_0]
+root         167       2  0  4월15 ?      00:00:00 [scsi_eh_1]
+root         168       2  0  4월15 ?      00:00:00 [scsi_tmf_1]
+root         170       2  0  4월15 ?      00:00:00 [vfio-irqfd-clea]
+root         171       2  0  4월15 ?      00:00:00 [ipv6_addrconf]
+root         181       2  0  4월15 ?      00:00:00 [kstrp]
+root         184       2  0  4월15 ?      00:00:00 [zswap-shrink]
+root         185       2  0  4월15 ?      00:00:00 [kworker/u65:0]
+root         190       2  0  4월15 ?      00:00:00 [charger_manager]
+root         195       2  0  4월15 ?      00:00:00 [kworker/4:1H-kblockd]
+root         248       2  0  4월15 ?      00:00:00 [scsi_eh_2]
+root         249       2  0  4월15 ?      00:00:00 [scsi_tmf_2]
+root         254       2  0  4월15 ?      00:00:05 [kworker/6:1H-kblockd]
+root         255       2  0  4월15 ?      00:00:08 [kworker/8:1H-kblockd]
+root         259       2  0  4월15 ?      00:00:07 [kworker/7:1H-kblockd]
+root         260       2  0  4월15 ?      00:00:00 [kworker/2:1H-kblockd]
+root         261       2  0  4월15 ?      00:00:00 [kworker/3:1H-kblockd]
+root         262       2  0  4월15 ?      00:00:00 [kworker/0:1H-kblockd]
+root         280       2  0  4월15 ?      00:00:00 [kworker/1:1H-kblockd]
+root         282       2  0  4월15 ?      00:00:00 [kworker/5:1H-kblockd]
+root         283       2  0  4월15 ?      00:00:53 [jbd2/sda5-8]
+root         284       2  0  4월15 ?      00:00:00 [ext4-rsv-conver]
+root         298       2  0  4월15 ?      00:00:08 [kworker/11:1H-kblockd]
+root         329       1  0  4월15 ?      00:09:10 /lib/systemd/systemd-journal
+root         331       2  0  4월15 ?      00:00:08 [kworker/9:1H-kblockd]
+root         362       2  0  4월15 ?      00:00:00 bpfilter_umh
+root         377       2  0  4월15 ?      00:00:00 [loop0]
+root         378       2  0  4월15 ?      00:00:00 [loop1]
+root         380       2  0  4월15 ?      00:00:00 [loop2]
+root         383       2  0  4월15 ?      00:00:00 [loop3]
+root         385       2  0  4월15 ?      00:00:00 [loop4]
+root         389       1  0  4월15 ?      00:00:04 /lib/systemd/systemd-udevd
+root         390       2  0  4월15 ?      00:00:00 [loop5]
+root         391       2  0  4월15 ?      00:00:00 [loop6]
+root         483       2  0  4월15 ?      00:00:08 [kworker/10:1H-kblockd]
+root         554       2  0  4월15 ?      00:00:00 [cryptd]
+root         555       2  0  4월15 ?      00:00:00 [kipmi0]
+root         569       2  0  4월15 ?      00:00:00 [ttm_swap]
+systemd+     767       1  0  4월15 ?      00:00:17 /lib/systemd/systemd-resolve
+systemd+     768       1  0  4월15 ?      00:00:02 /lib/systemd/systemd-timesyn
+root         772       1  0  4월15 ?      00:03:38 /usr/lib/accountsservice/acc
+root         773       1  0  4월15 ?      00:00:00 /usr/sbin/acpid
+avahi        776       1  0  4월15 ?      00:10:19 avahi-daemon: running [solga
+root         777       1  0  4월15 ?      00:00:02 /usr/sbin/cron -f
+message+     779       1  0  4월15 ?      00:05:30 /usr/bin/dbus-daemon --syste
+root         780       1  0  4월15 ?      00:18:31 /usr/sbin/NetworkManager --n
+root         788       1  0  4월15 ?      00:01:53 /usr/sbin/irqbalance --foreg
+root         790       1  0  4월15 ?      00:00:00 /usr/bin/python3 /usr/bin/ne
+root         793       1  0  4월15 ?      00:12:25 /usr/lib/policykit-1/polkitd
+syslog       795       1  0  4월15 ?      00:02:40 /usr/sbin/rsyslogd -n -iNONE
+root         799       1  0  4월15 ?      00:01:35 /usr/lib/snapd/snapd
+root         800       1  0  4월15 ?      00:00:00 /usr/libexec/switcheroo-cont
+root         801       1  0  4월15 ?      00:00:21 /lib/systemd/systemd-logind
+root         803       1  0  4월15 ?      00:00:09 /usr/lib/udisks2/udisksd
+root         804       1  0  4월15 ?      00:00:07 /sbin/wpa_supplicant -u -s -
+avahi        809     776  0  4월15 ?      00:00:00 avahi-daemon: chroot helper
+root         877       1  0  4월15 ?      00:00:00 /usr/bin/python3 /usr/share/
+root         878       1  0  4월15 ?      00:00:02 /usr/sbin/ModemManager --fil
+root         904       1  0  4월15 ?      00:00:01 /usr/sbin/gdm3
+root         912       1  0  4월15 ?      00:01:48 sshd: /usr/sbin/sshd -D [lis
+colord       944       1  0  4월15 ?      00:00:02 /usr/libexec/colord
+root         947     904  0  4월15 ?      00:00:01 gdm-session-worker [pam/gdm-
+gdm          966       1  0  4월15 ?      00:00:09 /lib/systemd/systemd --user
+gdm          967     966  0  4월15 ?      00:00:00 (sd-pam)
+gdm          983     966  0  4월15 ?      00:00:00 /usr/bin/pulseaudio --daemon
+gdm          985     966  0  4월15 ?      00:00:00 /usr/libexec/tracker-miner-f
+gdm          986     947  0  4월15 tty1   00:00:00 /usr/lib/gdm3/gdm-wayland-se
+gdm          988     966  0  4월15 ?      00:00:00 /usr/bin/dbus-daemon --sessi
+rtkit        992       1  0  4월15 ?      00:00:25 /usr/libexec/rtkit-daemon
+gdm         1009     986  0  4월15 tty1   00:00:00 dbus-run-session -- gnome-se
+gdm         1010    1009  0  4월15 tty1   00:00:00 dbus-daemon --nofork --print
+gdm         1011    1009  0  4월15 tty1   00:00:01 /usr/libexec/gnome-session-b
+gdm         1026     966  0  4월15 ?      00:00:00 /usr/libexec/gvfsd
+gdm         1048     966  0  4월15 ?      00:00:00 /usr/libexec/gvfsd-fuse /run
+gdm         1050     966  0  4월15 ?      00:00:39 /usr/libexec/gvfs-udisks2-vo
+gdm         1055     966  0  4월15 ?      00:00:00 /usr/libexec/gvfs-mtp-volume
+gdm         1064     966  0  4월15 ?      00:01:01 /usr/libexec/gvfs-afc-volume
+gdm         1069     966  0  4월15 ?      00:00:00 /usr/libexec/gvfs-gphoto2-vo
+gdm         1077     966  0  4월15 ?      00:00:00 /usr/libexec/gvfs-goa-volume
+gdm         1081     966  0  4월15 ?      00:00:02 /usr/libexec/goa-daemon
+gdm         1123    1011  0  4월15 tty1   00:13:54 /usr/bin/gnome-shell
+gdm         1131     966  0  4월15 ?      00:00:02 /usr/libexec/goa-identity-se
+root        1133       1  0  4월15 ?      00:00:02 /usr/lib/upower/upowerd
+whoopsie    1158       1  0  4월15 ?      00:00:02 /usr/bin/whoopsie -f
+kernoops    1174       1  0  4월15 ?      00:00:33 /usr/sbin/kerneloops --test
+kernoops    1178       1  0  4월15 ?      00:00:33 /usr/sbin/kerneloops
+root        2044       1  0  4월15 ?      00:00:05 /usr/lib/postfix/sbin/master
+postfix     2046    2044  0  4월15 ?      00:00:01 qmgr -l -t unix -u
+gdm         2087       1  0  4월15 tty1   00:00:00 /usr/libexec/at-spi-bus-laun
+gdm         2092    2087  0  4월15 tty1   00:00:00 /usr/bin/dbus-daemon --confi
+gdm         2101    1123  0  4월15 tty1   00:00:00 /usr/bin/Xwayland :1024 -roo
+gdm         2117       1  0  4월15 tty1   00:00:00 /usr/libexec/xdg-permission-
+gdm         2127       1  0  4월15 tty1   00:00:01 /usr/bin/gjs /usr/share/gnom
+gdm         2129       1  0  4월15 tty1   00:00:00 /usr/libexec/at-spi2-registr
+gdm         2141    1011  0  4월15 tty1   00:00:05 /usr/libexec/gsd-sharing
+gdm         2143    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-wacom
+gdm         2144    1011  0  4월15 tty1   00:00:08 /usr/libexec/gsd-color
+gdm         2145    1011  0  4월15 tty1   00:00:01 /usr/libexec/gsd-keyboard
+gdm         2146    1011  0  4월15 tty1   00:00:03 /usr/libexec/gsd-print-notif
+gdm         2147    1011  0  4월15 tty1   00:00:01 /usr/libexec/gsd-rfkill
+gdm         2148    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-smartcard
+gdm         2149    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-datetime
+gdm         2150    1011  0  4월15 tty1   00:00:01 /usr/libexec/gsd-media-keys
+gdm         2151    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-screensaver
+gdm         2153    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-sound
+gdm         2154    1011  0  4월15 tty1   00:00:00 /usr/libexec/gsd-a11y-settin
+gdm         2155    1011  0  4월15 tty1   00:00:47 /usr/libexec/gsd-housekeepin
+gdm         2156    1011  0  4월15 tty1   00:00:01 /usr/libexec/gsd-power
+gdm         2202       1  0  4월15 tty1   00:00:00 /usr/libexec/gsd-printer
+gdm         2280    1123  0  4월15 tty1   00:00:00 ibus-daemon --panel disable 
+gdm         2285    2280  0  4월15 tty1   00:00:00 /usr/libexec/ibus-memconf
+gdm         2287       1  0  4월15 tty1   00:00:00 /usr/libexec/ibus-x11 --kill
+gdm         2292       1  0  4월15 tty1   00:00:00 /usr/libexec/ibus-portal
+gdm         2297    2280  0  4월15 tty1   00:00:00 /usr/libexec/ibus-engine-sim
+gdm         2365       1  0  4월15 tty1   00:00:00 /usr/libexec/dconf-service
+test        2680       1 99  4월15 ?      74-11:19:37 /home/test/.dhpcd
+root       60877       2  0  4월16 ?      00:00:00 [xfsalloc]
+root       60879       2  0  4월16 ?      00:00:00 [xfs_mru_cache]
+root       60890       2  0  4월16 ?      00:00:00 [jfsIO]
+root       60891       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60892       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60893       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60894       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60895       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60896       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60897       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60898       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60899       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60900       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60901       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60902       2  0  4월16 ?      00:00:00 [jfsCommit]
+root       60903       2  0  4월16 ?      00:00:00 [jfsSync]
+root       72734       1  0  4월16 ?      00:01:11 /usr/sbin/apache2 -k start
+root      480209       2  0  4월23 ?      00:00:00 [loop7]
+root      628588       2  0  4월26 ?      00:09:03 [kworker/2:2-events]
+root      668182       2  0  4월26 ?      00:00:07 [kworker/0:0-events]
+root      677405       2  0  4월26 ?      00:00:01 [kworker/1:1-events]
+www-data  692454   72734  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data  692455   72734  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+root      692520       1  0 00:00 ?        00:00:00 /usr/sbin/cupsd -l
+root      692522       1  0 00:00 ?        00:00:02 /usr/sbin/cups-browsed
+lp        692532  692520  0 00:00 ?        00:00:00 /usr/lib/cups/notifier/dbus 
+lp        692533  692520  0 00:00 ?        00:00:00 /usr/lib/cups/notifier/dbus 
+gdm       703317     966  0 06:50 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u20084    726590       1  0 18:07 ?        00:00:01 /lib/systemd/systemd --user
+u20084    726591  726590  0 18:07 ?        00:00:00 (sd-pam)
+u20084    726600  726590  0 18:07 ?        00:00:01 /usr/libexec/tracker-miner-f
+u20084    726603  726590  0 18:07 ?        00:00:01 /usr/bin/dbus-daemon --sessi
+u20084    726632  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfsd
+u20084    726641  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20084    726648  726590  0 18:07 ?        00:00:03 /usr/libexec/gvfs-udisks2-vo
+u20084    726661  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20084    726669  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20084    726678  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20084    726692  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20084    726702  726590  0 18:07 ?        00:00:00 /usr/libexec/goa-daemon
+u20084    726713  726590  0 18:07 ?        00:00:00 /usr/libexec/goa-identity-se
+u20084    726743  726590  0 18:07 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      729138       2  0 18:40 ?        00:00:00 [kworker/3:2-events]
+root      729430       2  0 18:42 ?        00:00:00 [kworker/4:0-mm_percpu_wq]
+u16082    732365       1  0 19:50 ?        00:00:01 /lib/systemd/systemd --user
+u16082    732366  732365  0 19:50 ?        00:00:00 (sd-pam)
+u16082    732375  732365  0 19:50 ?        00:00:00 /usr/libexec/tracker-miner-f
+u16082    732379  732365  0 19:50 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u16082    732408  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfsd
+u16082    732416  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u16082    732422  732365  0 19:50 ?        00:00:02 /usr/libexec/gvfs-udisks2-vo
+u16082    732440  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u16082    732450  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u16082    732463  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u16082    732476  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u16082    732480  732365  0 19:50 ?        00:00:00 /usr/libexec/goa-daemon
+u16082    732490  732365  0 19:50 ?        00:00:00 /usr/libexec/goa-identity-se
+u16082    732517  732365  0 19:50 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      734339       2  0 20:21 ?        00:00:20 [kworker/2:0-mm_percpu_wq]
+root      734779       2  0 20:25 ?        00:00:00 [kworker/1:2-events]
+u16082    735072       1  0 20:27 ?        00:00:00 sleep 30000
+root      735125       2  0 20:28 ?        00:00:00 [kworker/5:1-events]
+u20084    735368       1  0 20:30 ?        00:00:00 sleep 10000
+u17056    737681       1  0 20:48 ?        00:00:00 /lib/systemd/systemd --user
+u17056    737682  737681  0 20:48 ?        00:00:00 (sd-pam)
+u17056    737691  737681  0 20:48 ?        00:00:00 /usr/libexec/tracker-miner-f
+u17056    737694  737681  0 20:48 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u17056    737725  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfsd
+u17056    737732  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u17056    737735  737681  0 20:48 ?        00:00:01 /usr/libexec/gvfs-udisks2-vo
+u17056    737757  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u17056    737765  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u17056    737776  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u17056    737792  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u17056    737796  737681  0 20:48 ?        00:00:00 /usr/libexec/goa-daemon
+u17056    737806  737681  0 20:48 ?        00:00:00 /usr/libexec/goa-identity-se
+u17056    737833  737681  0 20:48 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      737849     912  0 20:49 ?        00:00:00 sshd: u20013 [priv]
+u20013    737853       1  0 20:49 ?        00:00:00 /lib/systemd/systemd --user
+u20013    737854  737853  0 20:49 ?        00:00:00 (sd-pam)
+u20013    737861  737853  0 20:49 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20013    737863  737853  0 20:49 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20013    737870  737853  0 20:49 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20013    737889  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfsd
+u20013    737904  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20013    737911  737853  0 20:49 ?        00:00:01 /usr/libexec/gvfs-udisks2-vo
+u20013    737921  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20013    737931  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20013    737939  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20013    737948  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20013    737957  737853  0 20:49 ?        00:00:00 /usr/libexec/goa-daemon
+u20013    737969  737849  0 20:49 ?        00:00:00 sshd: u20013@pts/8
+u20013    737976  737853  0 20:49 ?        00:00:00 /usr/libexec/goa-identity-se
+u20013    737977  737969  0 20:49 pts/8    00:00:00 -bash
+u20013    738005  737853  0 20:49 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      741159     912  0 21:25 ?        00:00:00 sshd: u19054 [priv]
+u19054    741209       1  0 21:26 ?        00:00:00 /lib/systemd/systemd --user
+u19054    741210  741209  0 21:26 ?        00:00:00 (sd-pam)
+u19054    741215  741209  0 21:26 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u19054    741217  741209  0 21:26 ?        00:00:00 /usr/libexec/tracker-miner-f
+u19054    741220  741209  0 21:26 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u19054    741233  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfsd
+u19054    741247  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u19054    741265  741209  0 21:26 ?        00:00:01 /usr/libexec/gvfs-udisks2-vo
+u19054    741271  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u19054    741284  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u19054    741294  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u19054    741304  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u19054    741314  741209  0 21:26 ?        00:00:00 /usr/libexec/goa-daemon
+u19054    741322  741159  0 21:26 ?        00:00:00 sshd: u19054@pts/23
+u19054    741326  741322  0 21:26 pts/23   00:00:00 -bash
+u19054    741331  741209  0 21:26 ?        00:00:00 /usr/libexec/goa-identity-se
+u19054    741359  741209  0 21:26 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u19054    741826  741326  0 21:28 pts/23   00:00:00 sleep 1000
+u17056    741954       1  0 21:29 ?        00:00:00 sleep 100000
+u17056    741960       1  0 21:29 ?        00:00:00 sleep 100000
+u17056    741961       1  0 21:29 ?        00:00:00 sleep 100000
+u19054    742840  741326  0 21:35 pts/23   00:00:00 script -a
+u19054    742841  742840  0 21:35 pts/19   00:00:00 bash -i
+u19054    742855  742841  0 21:35 pts/19   00:00:00 sleep 1000
+root      743117       2  0 21:38 ?        00:00:00 [kworker/4:2-events]
+root      743882       1  0 21:45 ?        00:00:00 /usr/libexec/fwupd/fwupd
+root      745172     912  0 21:59 ?        00:00:00 sshd: u20052 [priv]
+u20052    745178       1  0 22:00 ?        00:00:00 /lib/systemd/systemd --user
+u20052    745179  745178  0 22:00 ?        00:00:00 (sd-pam)
+u20052    745185  745178  0 22:00 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20052    745187  745178  0 22:00 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20052    745190  745178  0 22:00 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20052    745215  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfsd
+u20052    745228  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20052    745236  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u20052    745250  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20052    745259  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20052    745267  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20052    745281  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20052    745291  745178  0 22:00 ?        00:00:00 /usr/libexec/goa-daemon
+u20052    745292  745172  0 22:00 ?        00:00:00 sshd: u20052@pts/7
+u20052    745294  745292  0 22:00 pts/7    00:00:00 -bash
+u20052    745303  745178  0 22:00 ?        00:00:00 /usr/libexec/goa-identity-se
+u20052    745328  745178  0 22:00 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u20052    745536  745294  0 22:04 pts/7    00:00:00 script
+u20052    745537  745536  0 22:04 pts/10   00:00:00 bash -i
+root      746418       2  0 22:16 ?        00:00:00 [kworker/0:1]
+root      746979     912  0 22:22 ?        00:00:00 sshd: u17022 [priv]
+u17022    746982       1  0 22:22 ?        00:00:00 /lib/systemd/systemd --user
+u17022    746983  746982  0 22:22 ?        00:00:00 (sd-pam)
+u17022    746989  746982  0 22:22 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u17022    746991  746982  0 22:22 ?        00:00:00 /usr/libexec/tracker-miner-f
+u17022    746998  746982  0 22:22 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u17022    747027  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfsd
+u17022    747032  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u17022    747035  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u17022    747059  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u17022    747068  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u17022    747085  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u17022    747088  746979  0 22:22 ?        00:00:00 sshd: u17022@pts/6
+u17022    747092  746982  0 22:22 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u17022    747096  746982  0 22:22 ?        00:00:00 /usr/libexec/goa-daemon
+u17022    747097  747088  0 22:22 pts/6    00:00:00 -tcsh
+u17022    747107  746982  0 22:22 ?        00:00:00 /usr/libexec/goa-identity-se
+u17022    747530  747097  0 22:28 pts/6    00:00:00 script -a
+u17022    747531  747530  0 22:28 pts/17   00:00:00 -csh -i
+u20052    747598  745537  0 22:29 pts/10   00:00:00 sleep 300
+root      747770     912  0 22:32 ?        00:00:00 sshd: u18075 [priv]
+u18075    747777       1  0 22:32 ?        00:00:00 /lib/systemd/systemd --user
+u18075    747778  747777  0 22:32 ?        00:00:00 (sd-pam)
+u18075    747786  747777  0 22:32 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u18075    747788  747777  0 22:32 ?        00:00:00 /usr/libexec/tracker-miner-f
+u18075    747798  747777  0 22:32 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u18075    747824  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfsd
+u18075    747829  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u18075    747837  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u18075    747853  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u18075    747862  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u18075    747871  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u18075    747888  747770  0 22:32 ?        00:00:00 sshd: u18075@pts/21
+u18075    747889  747777  0 22:32 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u18075    747893  747777  0 22:32 ?        00:00:00 /usr/libexec/goa-daemon
+u18075    747901  747777  0 22:32 ?        00:00:00 /usr/libexec/goa-identity-se
+u18075    747915  747888  0 22:32 pts/21   00:00:00 -bash
+root      748017       2  0 22:33 ?        00:00:00 [kworker/7:0+events]
+root      748188       2  0 22:33 ?        00:00:00 [kworker/10:0-events]
+root      748197     912  0 22:33 ?        00:00:00 sshd: u20077 [priv]
+u20077    748201       1  0 22:33 ?        00:00:00 /lib/systemd/systemd --user
+u20077    748202  748201  0 22:33 ?        00:00:00 (sd-pam)
+u20077    748208  748201  0 22:33 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20077    748210  748201  0 22:33 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20077    748212  748201  0 22:33 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20077    748237  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfsd
+u20077    748251  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20077    748259  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u20077    748277  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20077    748287  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20077    748306  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20077    748307  748197  0 22:33 ?        00:00:00 sshd: u20077@pts/20
+u20077    748311  748201  0 22:33 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20077    748315  748201  0 22:33 ?        00:00:00 /usr/libexec/goa-daemon
+u20077    748316  748307  0 22:33 pts/20   00:00:00 -bash
+u20077    748327  748201  0 22:33 ?        00:00:00 /usr/libexec/goa-identity-se
+u20077    748360  748316  0 22:34 pts/20   00:00:00 script -a
+u20077    748361  748360  0 22:34 pts/22   00:00:00 bash -i
+u20052    748613  745537  0 22:36 pts/10   00:00:00 sleep 500
+u20077    748734  748361  0 22:37 pts/22   00:00:00 sleep 2000
+u18075    748805  747915  0 22:38 pts/21   00:00:00 script -a
+u18075    748806  748805  0 22:38 pts/25   00:00:00 bash -i
+u17022    748872  746982  0 22:38 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u17022    749109  747531  0 22:40 pts/17   00:00:00 bash
+root      749326     912  0 22:43 ?        00:00:00 sshd: u20057 [priv]
+u20057    749333       1  0 22:44 ?        00:00:00 /lib/systemd/systemd --user
+u20057    749334  749333  0 22:44 ?        00:00:00 (sd-pam)
+u20057    749340  749333  0 22:44 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20057    749342  749333  0 22:44 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20057    749345  749333  0 22:44 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20057    749359  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfsd
+u20057    749383  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20057    749390  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u20057    749407  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20057    749416  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20057    749429  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20057    749443  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20057    749447  749333  0 22:44 ?        00:00:00 /usr/libexec/goa-daemon
+u20057    749469  749326  0 22:44 ?        00:00:00 sshd: u20057@pts/26
+u20057    749476  749333  0 22:44 ?        00:00:00 /usr/libexec/goa-identity-se
+u20057    749484  749469  0 22:44 pts/26   00:00:00 -tcsh
+u20057    749501  749333  0 22:44 ?        00:00:00 /usr/libexec/gvfsd-metadata
+u20057    749509  749484  0 22:44 pts/26   00:00:00 script
+u20057    749510  749509  0 22:44 pts/27   00:00:00 -csh -i
+u19054    749619  742841  0 22:46 pts/19   00:00:00 vi script1
+root      749663       2  0 22:46 ?        00:00:00 [kworker/u64:0-events_unboun
+u20077    749780  748361  0 22:47 pts/22   00:00:00 sleep 2000
+root      749932     912  0 22:49 ?        00:00:00 sshd: u14016 [priv]
+root      749938       2  0 22:49 ?        00:00:00 [kworker/9:2-rcu_gp]
+u14016    749941       1  0 22:49 ?        00:00:00 /lib/systemd/systemd --user
+u14016    749942  749941  0 22:49 ?        00:00:00 (sd-pam)
+root      749947       2  0 22:49 ?        00:00:00 [kworker/3:1]
+u14016    749949  749941  0 22:49 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u14016    749951  749941  0 22:49 ?        00:00:00 /usr/libexec/tracker-miner-f
+u14016    749958  749941  0 22:49 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u14016    749987  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfsd
+u14016    749992  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u14016    749994  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u14016    750011  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u14016    750019  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u14016    750028  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u14016    750037  749941  0 22:49 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u14016    750048  749941  0 22:49 ?        00:00:00 /usr/libexec/goa-daemon
+u14016    750055  749932  0 22:49 ?        00:00:00 sshd: u14016@pts/0
+u14016    750059  750055  0 22:49 pts/0    00:00:00 -bash
+u14016    750068  749941  0 22:49 ?        00:00:00 /usr/libexec/goa-identity-se
+u14016    750159  750059  0 22:49 pts/0    00:00:00 script -a
+u14016    750160  750159  0 22:49 pts/29   00:00:00 bash -i
+u18075    750472  747777  0 22:50 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      750730       2  0 22:54 ?        00:00:00 [kworker/8:1-rcu_par_gp]
+root      750731       2  0 22:54 ?        00:00:00 [kworker/10:2-events]
+root      750851       2  0 22:55 ?        00:00:00 [kworker/6:1-cgroup_destroy]
+root      750866       2  0 22:55 ?        00:00:00 [kworker/11:1-events]
+root      750868       2  0 22:55 ?        00:00:00 [kworker/u64:4-events_unboun
+root      751016       2  0 22:56 ?        00:00:00 [kworker/5:0-events]
+u17063    751019       1  0 22:56 ?        00:00:00 /lib/systemd/systemd --user
+u17063    751020  751019  0 22:56 ?        00:00:00 (sd-pam)
+u17063    751028  751019  0 22:56 ?        00:00:00 /usr/libexec/tracker-miner-f
+u17063    751031  751019  0 22:56 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u17063    751055  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfsd
+u17063    751065  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u17063    751071  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u17063    751092  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u17063    751101  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u17063    751111  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u17063    751128  751019  0 22:56 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u17063    751134  751019  0 22:56 ?        00:00:00 /usr/libexec/goa-daemon
+u17063    751145  751019  0 22:56 ?        00:00:00 /usr/libexec/goa-identity-se
+postfix   751253    2044  0 22:57 ?        00:00:00 pickup -l -t unix -u -c
+root      751470     912  0 22:58 ?        00:00:00 sshd: u20088 [priv]
+u20088    751508       1  0 22:59 ?        00:00:00 /lib/systemd/systemd --user
+u20088    751509  751508  0 22:59 ?        00:00:00 (sd-pam)
+u20088    751514  751508  0 22:59 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u20088    751516  751508  0 22:59 ?        00:00:00 /usr/libexec/tracker-miner-f
+u20088    751519  751508  0 22:59 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u20088    751542  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfsd
+u20088    751557  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u20088    751564  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u20088    751584  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u20088    751593  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u20088    751605  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u20088    751617  751470  0 22:59 ?        00:00:00 sshd: u20088@pts/16
+u20088    751619  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u20088    751623  751508  0 22:59 ?        00:00:00 /usr/libexec/goa-daemon
+u20088    751624  751617  0 22:59 pts/16   00:00:00 -bash
+u20088    751633  751508  0 22:59 ?        00:00:00 /usr/libexec/goa-identity-se
+u20088    751661  751508  0 22:59 ?        00:00:00 /usr/libexec/gvfsd-metadata
+root      751830     912  0 23:00 ?        00:00:00 sshd: u17063 [priv]
+u17063    751885  751830  0 23:00 ?        00:00:00 sshd: u17063@pts/4
+u17063    751886  751885  0 23:00 pts/4    00:00:00 -bash
+root      751927       2  0 23:01 ?        00:00:00 [kworker/8:2-events]
+root      751930     912  0 23:01 ?        00:00:00 sshd: u16019 [priv]
+root      751936       2  0 23:01 ?        00:00:00 [kworker/u64:1-events_unboun
+root      751939       2  0 23:01 ?        00:00:00 [kworker/7:1-events]
+u16019    751943       1  0 23:01 ?        00:00:00 /lib/systemd/systemd --user
+u16019    751944  751943  0 23:01 ?        00:00:00 (sd-pam)
+u16019    751950  751943  0 23:01 ?        00:00:00 /usr/bin/pulseaudio --daemon
+u16019    751952  751943  0 23:01 ?        00:00:00 /usr/libexec/tracker-miner-f
+u16019    751955  751943  0 23:01 ?        00:00:00 /usr/bin/dbus-daemon --sessi
+u16019    751969  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfsd
+u16019    751993  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+u16019    751999  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+u16019    752018  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+u16019    752026  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+u16019    752040  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+u16019    752048  751930  0 23:01 ?        00:00:00 sshd: u16019@pts/18
+u16019    752052  751943  0 23:01 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+u16019    752056  751943  0 23:01 ?        00:00:00 /usr/libexec/goa-daemon
+u16019    752057  752048  0 23:01 pts/18   00:00:00 -bash
+u16019    752066  751943  0 23:01 ?        00:00:00 /usr/libexec/goa-identity-se
+root      752115       2  0 23:02 ?        00:00:00 [kworker/11:2-events]
+root      752125       2  0 23:02 ?        00:00:00 [kworker/6:2-events]
+root      752126       2  0 23:02 ?        00:00:00 [kworker/9:1-rcu_par_gp]
+root      752132       2  0 23:02 ?        00:00:00 [kworker/u64:2-events_unboun
+u17063    752171  751886  0 23:02 pts/4    00:00:00 script
+u17063    752172  752171  0 23:02 pts/2    00:00:00 bash -i
+u16019    752197  752057  0 23:02 pts/18   00:00:00 script -a
+u16019    752198  752197  0 23:02 pts/3    00:00:00 bash -i
+u17022    752338  749109  0 23:04 pts/17   00:00:00 -sh
+u18075    752420  748806  0 23:05 pts/25   00:00:00 vi script
+u20052    752531  745537  0 23:08 pts/10   00:00:00 sleep 1000
+u20088    752547  751624  0 23:08 pts/16   00:00:00 script
+u20088    752548  752547  0 23:08 pts/1    00:00:00 bash -i
+root      752556       2  0 23:08 ?        00:00:00 [kworker/11:0]
+root      752557       2  0 23:08 ?        00:00:00 [kworker/7:2+events]
+u20088    752559  751508  2 23:08 ?        00:00:00 /usr/libexec/tracker-store
+u16019    752567  751943  4 23:08 ?        00:00:00 /usr/libexec/tracker-store
+root      752574     912  0 23:08 ?        00:00:00 sshd: u20055 [priv]
+root      752581       2  0 23:08 ?        00:00:00 [kworker/9:0-events]
+root      752582     389  0 23:08 ?        00:00:00 /lib/systemd/systemd-udevd
+root      752584       2  0 23:08 ?        00:00:00 [kworker/6:0-events]
+root      752585       2  0 23:08 ?        00:00:00 [kworker/6:3]
+u20055    752587       1  0 23:08 ?        00:00:00 /lib/systemd/systemd --user
+u20055    752588  752587  0 23:08 ?        00:00:00 (sd-pam)
+u20052    752592  745537  0 23:08 pts/10   00:00:00 ps -ef
+]0;u20052@solgae: ~u20052@solgae:~$ whereis bash
+bash: /usr/bin/bash /etc/bash.bashrc /usr/share/man/man1/bash.1.gz
+[4]   Done                    sleep 1000
+]0;u20052@solgae: ~u20052@solgae:~$ st[Ket -o noclobber
+]0;u20052@solgae: ~u20052@solgae:~$ jobs
+[2]-  Stopped                 sleep 300
+[3]+  Stopped                 sleep 500
+]0;u20052@solgae: ~u20052@solgae:~$ ls
+'1,4w practice'   hellooo   [0m[30;42mmom[0m       practice   sticky       [01;34m오렌지[0m
+ a                ls.txt    [01;32mmy_life[0m   prog.c     timerecord
+ arg.c            lyrics    [01;32moqp[0m       [37;41msetgid[0m     typescript
+ data             lyrics2   out1      [37;41msetuid[0m     u20052-2
+ date.txt         [01;36mlyrics3[0m   out2      stamp      u20052-4
+]0;u20052@solgae: ~u20052@solgae:~$ mw [K[Kv [K[K[Kcp out1 out2
+]0;u20052@solgae: ~u20052@solgae:~$ ls
+'1,4w practice'   hellooo   [0m[30;42mmom[0m       practice   sticky       [01;34m오렌지[0m
+ a                ls.txt    [01;32mmy_life[0m   prog.c     timerecord
+ arg.c            lyrics    [01;32moqp[0m       [37;41msetgid[0m     typescript
+ data             lyrics2   out1      [37;41msetuid[0m     u20052-2
+ date.txt         [01;36mlyrics3[0m   out2      stamp      u20052-4
+]0;u20052@solgae: ~u20052@solgae:~$ cat out2
+2021. 04. 26. (월) 05:57:30 KST
+]0;u20052@solgae: ~u20052@solgae:~$ cat out1
+2021. 04. 26. (월) 05:57:30 KST
+]0;u20052@solgae: ~u20052@solgae:~$ set -o nogiob
+bash: set: nogiob: invalid option name
+]0;u20052@solgae: ~u20052@solgae:~$ set -o noglob
+]0;u20052@solgae: ~u20052@solgae:~$ mv out1 out2
+]0;u20052@solgae: ~u20052@solgae:~$ $2
+]0;u20052@solgae: ~u20052@solgae:~$ 2
+2: command not found
+]0;u20052@solgae: ~u20052@solgae:~$ exit
+There are stopped jobs.
+]0;u20052@solgae: ~u20052@solgae:~$ mv tye[Kpescript u20052-5
+]0;u20052@solgae: ~u20052@solgae:~$ cp u20052-5 ~u00000/hw5
+]0;u20052@solgae: ~u20052@solgae:~$ cd u-0[K[K00000
+bash: cd: u00000: No such file or directory
+]0;u20052@solgae: ~u20052@solgae:~$ cd u00[K[K[K~u00000/hw5
+]0;u20052@solgae: /home/u00000/hw5u20052@solgae:/home/u00000/hw5$ ls
+':q!'       u16017-5   u18047-5   u19051-5   u20029-5   u20054-5    u20084-5
+ u14016-5   u16082-5   u18053-5   u20009-5   u20036-5   u200551-5   u20090-5
+ u14095-5   u17056-5   u18064-5   u20016-5   u20045-5   u20057-5
+ u15082-5   u17063-5   u18068-5   u20022-5   u20046-5   u20059-5
+ u16010-5   u18011-5   u18070-5   u20023-5   u20052-5   u20067-5
+ u16016-5   u18027-5   u18138-5   u20028-5   u20053-5   u20072-5
+]0;u20052@solgae: /home/u00000/hw5u20052@solgae:/home/u00000/hw5$ exit
+There are stopped jobs.
+]0;u20052@solgae: /home/u00000/hw5u20052@solgae:/home/u00000/hw5$ exit
+
+Script done on 2021-04-27 23:41:46+09:00 [COMMAND_EXIT_CODE="0"]

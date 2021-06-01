@@ -1,0 +1,452 @@
+Script started on 2021-04-14 06:57:52+09:00 [TERM="xterm" TTY="/dev/pts/8" COLUMNS="80" LINES="58"]
+]0;u20052@solgae: ~u20052@solgae:~$ date > timerecord
+]0;u20052@solgae: ~u20052@solgae:~$ cat in[K[Ktimerecord
+2021. 04. 14. (수) 06:58:15 KST
+]0;u20052@solgae: ~u20052@solgae:~$ date >>t[K timerecord
+]0;u20052@solgae: ~u20052@solgae:~$ cat timerecod[Krd
+2021. 04. 14. (수) 06:58:15 KST
+2021. 04. 14. (수) 06:59:09 KST
+]0;u20052@solgae: ~u20052@solgae:~$ echo Hello
+Hello
+]0;u20052@solgae: ~u20052@solgae:~$ echo\<your\>
+echo<your>: command not found
+]0;u20052@solgae: ~u20052@solgae:~$ echo \< [Kyour\>
+<your>
+]0;u20052@solgae: ~u20052@solgae:~$ echo \&
+&
+]0;u20052@solgae: ~u20052@solgae:~$ eco[Kho \[my\]
+[my]
+]0;u20052@solgae: ~u20052@solgae:~$ echo Hello \<your\> \& \[my\}[K]
+Hello <your> & [my]
+]0;u20052@solgae: ~u20052@solgae:~$ bc
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'. 
+cs[K[Kscale=30
+5/7
+.714285714285714285714285714285
+]0;u20052@solgae: ~u20052@solgae:~$ bc << word
+> scale=30
+> 5/7
+> word
+.714285714285714285714285714285
+]0;u20052@solgae: ~u20052@solgae:~$ ls a*
+ls: cannot access 'a*': No such file or directory
+]0;u20052@solgae: ~u20052@solgae:~$ /bin/a*
+unknown or incompatible options
+/bin/aa-enabled: [options]
+  options:
+  -q | --quiet        Don't print out any messages
+  -h | --help         Print help
+]0;u20052@solgae: ~u20052@solgae:~$ *a-[K[K[a-k][K[K[K[K[K[Kls *[a-k]
+'1,4w practice'   [0m[01;32mmy_life[0m   practice   prog.c   [37;41msetgid[0m   [37;41msetuid[0m   timerecord
+]0;u20052@solgae: ~u20052@solgae:~$ ls /bin [K/a*
+[0m[01;32m/bin/aa-enabled[0m            [01;32m/bin/apt-key[0m
+[01;32m/bin/aa-exec[0m               [01;32m/bin/apt-mark[0m
+[01;36m/bin/aclocal[0m               [01;32m/bin/apt-sortpkgs[0m
+[01;32m/bin/aclocal-1.16[0m          [01;32m/bin/aptdcon[0m
+[01;32m/bin/aconnect[0m              [01;32m/bin/apturl[0m
+[01;32m/bin/acpi_listen[0m           [01;32m/bin/apturl-gtk[0m
+[01;32m/bin/add-apt-repository[0m    [01;36m/bin/ar[0m
+[01;32m/bin/addpart[0m               [01;32m/bin/arch[0m
+[01;36m/bin/addr2line[0m             [01;36m/bin/arecord[0m
+[01;32m/bin/alsabat[0m               [01;32m/bin/arecordmidi[0m
+[01;32m/bin/alsaloop[0m              [01;32m/bin/arm2hpdl[0m
+[01;32m/bin/alsamixer[0m             [01;36m/bin/as[0m
+[01;32m/bin/alsatplg[0m              [01;32m/bin/aseqdump[0m
+[01;32m/bin/alsaucm[0m               [01;32m/bin/aseqnet[0m
+[01;32m/bin/amidi[0m                 [01;32m/bin/aspell[0m
+[01;32m/bin/amixer[0m                [01;32m/bin/aspell-import[0m
+[01;32m/bin/amuFormat.sh[0m          [01;32m/bin/atobm[0m
+[01;32m/bin/apg[0m                   [01;32m/bin/autoconf[0m
+[01;32m/bin/apgbfm[0m                [01;32m/bin/autoheader[0m
+[01;32m/bin/aplay[0m                 [01;32m/bin/autom4te[0m
+[01;32m/bin/aplaymidi[0m             [01;36m/bin/automake[0m
+[01;32m/bin/apport-bug[0m            [01;32m/bin/automake-1.16[0m
+[01;32m/bin/apport-cli[0m            [01;32m/bin/autoreconf[0m
+[01;36m/bin/apport-collect[0m        [01;32m/bin/autoscan[0m
+[01;32m/bin/apport-unpack[0m         [01;32m/bin/autoupdate[0m
+[01;32m/bin/appres[0m                [01;32m/bin/avahi-browse[0m
+[01;32m/bin/appstreamcli[0m          [01;36m/bin/avahi-browse-domains[0m
+[01;36m/bin/apropos[0m               [01;32m/bin/avahi-publish[0m
+[01;32m/bin/apt[0m                   [01;36m/bin/avahi-publish-address[0m
+[01;36m/bin/apt-add-repository[0m    [01;36m/bin/avahi-publish-service[0m
+[01;32m/bin/apt-cache[0m             [01;32m/bin/avahi-resolve[0m
+[01;32m/bin/apt-cdrom[0m             [01;36m/bin/avahi-resolve-address[0m
+[01;32m/bin/apt-config[0m            [01;36m/bin/avahi-resolve-host-name[0m
+[01;32m/bin/apt-extracttemplates[0m  [01;32m/bin/avahi-set-host-name[0m
+[01;32m/bin/apt-ftparchive[0m        [01;36m/bin/awk[0m
+[01;32m/bin/apt-get[0m               [01;32m/bin/axfer[0m
+]0;u20052@solgae: ~u20052@solgae:~$ ls /bim/[K[Kn/*[a-k]
+[0m[01;32m/bin/Xorg[0m                            [01;36m/bin/mcd[0m
+[01;32m/bin/Xwayland[0m                        [01;32m/bin/mcheck[0m
+[01;32m/bin/aa-enabled[0m                      [01;36m/bin/mclasserase[0m
+[01;32m/bin/aa-exec[0m                         [01;32m/bin/mcookie[0m
+[01;36m/bin/addr2line[0m                       [01;36m/bin/mdeltree[0m
+[01;32m/bin/alsatplg[0m                        [01;32m/bin/mdig[0m
+[01;32m/bin/amidi[0m                           [01;32m/bin/mesg[0m
+[01;32m/bin/amuFormat.sh[0m                    [01;32m/bin/migrate-pubring-from-classic-gpg[0m
+[01;32m/bin/apg[0m                             [01;32m/bin/mimetype[0m
+[01;32m/bin/aplaymidi[0m                       [01;32m/bin/mkfontscale[0m
+[01;32m/bin/apport-bug[0m                      [01;32m/bin/mknod[0m
+[01;32m/bin/apport-cli[0m                      [01;32m/bin/mkzftree[0m
+[01;32m/bin/apport-unpack[0m                   [01;32m/bin/mmcli[0m
+[01;32m/bin/appstreamcli[0m                    [01;36m/bin/mmd[0m
+[01;32m/bin/apt-cache[0m                       [01;36m/bin/mmove[0m
+[01;32m/bin/apt-config[0m                      [01;32m/bin/more[0m
+[01;32m/bin/apt-ftparchive[0m                  [01;36m/bin/mrd[0m
+[01;32m/bin/apt-mark[0m                        [01;32m/bin/msexpand[0m
+[01;32m/bin/apturl-gtk[0m                      [01;36m/bin/mshortname[0m
+[01;32m/bin/arch[0m                            [01;32m/bin/mtrace[0m
+[01;36m/bin/arecord[0m                         [01;36m/bin/mtype[0m
+[01;32m/bin/arecordmidi[0m                     [01;32m/bin/namei[0m
+[01;32m/bin/autoconf[0m                        [01;32m/bin/nautilus-autorun-software[0m
+[01;32m/bin/autom4te[0m                        [01;36m/bin/nawk[0m
+[01;36m/bin/automake[0m                        [01;36m/bin/nc[0m
+[01;32m/bin/autoreconf[0m                      [01;32m/bin/nc.openbsd[0m
+[01;32m/bin/autoupdate[0m                      [01;32m/bin/nice[0m
+[01;32m/bin/avahi-browse[0m                    [01;36m/bin/nisdomainname[0m
+[01;32m/bin/avahi-publish[0m                   [01;32m/bin/nm-online[0m
+[01;36m/bin/avahi-publish-service[0m           [01;32m/bin/nmcli[0m
+[01;32m/bin/avahi-resolve[0m                   [01;32m/bin/nmtui[0m
+[01;36m/bin/avahi-resolve-host-name[0m         [01;36m/bin/nmtui-hostname[0m
+[01;32m/bin/avahi-set-host-name[0m             [01;32m/bin/notify-send[0m
+[01;36m/bin/awk[0m                             [01;32m/bin/nproc[0m
+[01;32m/bin/baobab[0m                          [01;32m/bin/nroff[0m
+[01;32m/bin/basename[0m                        [01;32m/bin/nsupdate[0m
+[01;32m/bin/bash[0m                            [01;32m/bin/ntfs-3g[0m
+[01;32m/bin/bashbug[0m                         [01;32m/bin/ntfs-3g.probe[0m
+[01;32m/bin/bc[0m                              [01;32m/bin/ntfsfallocate[0m
+[01;32m/bin/bccmd[0m                           [01;32m/bin/ntfsmove[0m
+[01;32m/bin/bdftopcf[0m                        [01;32m/bin/ntfstruncate[0m
+[01;32m/bin/bdftruncate[0m                     [01;32m/bin/ntfswipe[0m
+[01;32m/bin/bmtoa[0m                           [01;32m/bin/oakdecode[0m
+[01;32m/bin/brltty-ctb[0m                      [01;32m/bin/oclock[0m
+[01;32m/bin/brltty-ttb[0m                      [01;32m/bin/od[0m
+[01;32m/bin/broadwayd[0m                       [01;32m/bin/opldecode[0m
+[01;36m/bin/browse[0m                          [01;32m/bin/orca[0m
+[30;43m/bin/bsd-write[0m                       [01;32m/bin/pacmd[0m
+[01;32m/bin/btattach[0m                        [01;32m/bin/paperconf[0m
+[01;32m/bin/bzdiff[0m                          [01;36m/bin/parec[0m
+[01;32m/bin/bzexe[0m                           [01;36m/bin/parecord[0m
+[01;32m/bin/bzmore[0m                          [37;41m/bin/passwd[0m
+[01;32m/bin/c89-gcc[0m                         [01;32m/bin/paste[0m
+[01;32m/bin/c99-gcc[0m                         [01;36m/bin/pasteurize[0m
+[01;32m/bin/c_rehash[0m                        [01;32m/bin/patch[0m
+[01;32m/bin/caca-config[0m                     [01;32m/bin/pathchk[0m
+[01;32m/bin/calibrate_ppa[0m                   [01;32m/bin/pax11publish[0m
+[01;36m/bin/cc[0m                              [01;32m/bin/pcre-config[0m
+[01;32m/bin/cd-create-profile[0m               [01;32m/bin/pcre2-config[0m
+[01;32m/bin/cd-fix-profile[0m                  [01;32m/bin/pdf2dsc[0m
+[30;43m/bin/chage[0m                           [01;32m/bin/pdfattach[0m
+[01;32m/bin/cheese[0m                          [01;32m/bin/pdfdetach[0m
+[01;32m/bin/chmod[0m                           [01;32m/bin/pdfseparate[0m
+[37;41m/bin/chsh[0m                            [01;32m/bin/pdfsig[0m
+[01;32m/bin/clear_console[0m                   [01;32m/bin/pdfunite[0m
+[01;32m/bin/codepage[0m                        [01;32m/bin/peekfd[0m
+[01;36m/bin/compose[0m                         [01;32m/bin/perlbug[0m
+[30;43m/bin/crontab[0m                         [01;32m/bin/perldoc[0m
+[01;36m/bin/csh[0m                             [01;32m/bin/perli11ndoc[0m
+[01;32m/bin/cupstestppd[0m                     [01;32m/bin/pfbtopfa[0m
+[01;32m/bin/dash[0m                            [01;32m/bin/pic[0m
+[01;32m/bin/date[0m                            [01;36m/bin/pidof[0m
+[01;32m/bin/dbus-launch[0m                     [01;32m/bin/ping[0m
+[01;32m/bin/dbus-send[0m                       [01;32m/bin/pkcheck[0m
+[01;32m/bin/dc[0m                              [37;41m/bin/pkexec[0m
+[01;32m/bin/dconf[0m                           [01;32m/bin/pkg-config[0m
+[01;32m/bin/dd[0m                              [01;32m/bin/pldd[0m
+[01;32m/bin/ddstdecode[0m                      [01;32m/bin/plog[0m
+[01;32m/bin/deb-systemd-invoke[0m              [01;32m/bin/plymouth[0m
+[01;32m/bin/debconf[0m                         [01;32m/bin/pnm2ppa[0m
+[01;32m/bin/debconf-communicate[0m             [01;32m/bin/pod2usage[0m
+[01;32m/bin/debconf-copydb[0m                  [01;32m/bin/poff[0m
+[01;32m/bin/debconf-escape[0m                  [01;32m/bin/ppdc[0m
+[01;32m/bin/desktop-file-validate[0m           [01;32m/bin/ppdi[0m
+[01;32m/bin/df[0m                              [01;32m/bin/ppdmerge[0m
+[01;32m/bin/dh_autotools-dev_restoreconfig[0m  [01;32m/bin/printer-profile[0m
+[01;32m/bin/dh_autotools-dev_updateconfig[0m   [01;32m/bin/printf[0m
+[01;32m/bin/diff[0m                            [01;32m/bin/prove[0m
+[01;32m/bin/dig[0m                             [01;32m/bin/ps2ascii[0m
+[01;32m/bin/dirname[0m                         [01;32m/bin/ps2epsi[0m
+[01;32m/bin/dmesg[0m                           [01;32m/bin/ps2pdf[0m
+[01;36m/bin/dnsdomainname[0m                   [01;36m/bin/psfaddtable[0m
+[01;32m/bin/do-release-upgrade[0m              [01;36m/bin/psfgettable[0m
+[01;36m/bin/domainname[0m                      [01;36m/bin/psfstriptable[0m
+[01;36m/bin/dotlock[0m                         [01;32m/bin/psfxtable[0m
+[01;32m/bin/dpkg[0m                            [01;32m/bin/psicc[0m
+[01;32m/bin/dpkg-deb[0m                        [01;32m/bin/pslog[0m
+[01;32m/bin/dpkg-statoverride[0m               [01;32m/bin/pstree[0m
+[01;32m/bin/dvipdf[0m                          [01;32m/bin/ptardiff[0m
+[01;36m/bin/ebrowse[0m                         [01;32m/bin/pwd[0m
+[01;32m/bin/ed[0m                              [01;32m/bin/py3compile[0m
+[01;32m/bin/emacs-gtk[0m                       [01;32m/bin/pycompile[0m
+[01;32m/bin/eog[0m                             [01;32m/bin/python3-futurize[0m
+[01;32m/bin/evince[0m                          [01;32m/bin/python3-pasteurize[0m
+[01;32m/bin/expand[0m                          [01;32m/bin/qpdldecode[0m
+[01;32m/bin/faillog[0m                         [01;36m/bin/ranlib[0m
+[01;32m/bin/fallocate[0m                       [01;36m/bin/rbash[0m
+[01;32m/bin/false[0m                           [01;32m/bin/rdma[0m
+[01;32m/bin/fc-cache[0m                        [01;36m/bin/readelf[0m
+[01;32m/bin/fc-match[0m                        [01;32m/bin/readlink[0m
+[01;32m/bin/fc-validate[0m                     [01;36m/bin/readmsg[0m
+[01;32m/bin/fgconsole[0m                       [01;32m/bin/realpath[0m
+[01;32m/bin/file[0m                            [01;32m/bin/red[0m
+[01;32m/bin/fincore[0m                         [01;32m/bin/remmina[0m
+[01;32m/bin/find[0m                            [01;32m/bin/remmina-gnome[0m
+[01;32m/bin/flock[0m                           [01;32m/bin/rendercheck[0m
+[01;32m/bin/fold[0m                            [01;32m/bin/renice[0m
+[01;32m/bin/foo2hiperc[0m                      [01;32m/bin/routef[0m
+[01;32m/bin/foo2lava[0m                        [01;36m/bin/rrsync[0m
+[01;32m/bin/foo2oak[0m                         [01;36m/bin/rsh[0m
+[01;32m/bin/fprintd-delete[0m                  [01;32m/bin/rstartd[0m
+[01;32m/bin/free[0m                            [01;32m/bin/rsync[0m
+[01;36m/bin/futurize[0m                        [01;32m/bin/savelog[0m
+[01;32m/bin/fwupdate[0m                        [01;32m/bin/sbattach[0m
+[01;32m/bin/fwupdtpmevlog[0m                   [01;32m/bin/sbkeysync[0m
+[01;32m/bin/gamemoded[0m                       [01;32m/bin/scanimage[0m
+[01;32m/bin/gamma4scanimage[0m                 [01;32m/bin/scp-dbus-service[0m
+[01;32m/bin/gcalccmd[0m                        [01;32m/bin/sdiff[0m
+[01;36m/bin/gcc[0m                             [01;32m/bin/sdl-config[0m
+[01;36m/bin/gcc-ranlib[0m                      [01;32m/bin/seahorse[0m
+[01;32m/bin/gcore[0m                           [01;32m/bin/sed[0m
+[01;32m/bin/gdb[0m                             [01;36m/bin/see[0m
+[01;32m/bin/gdbtui[0m                          [01;32m/bin/sessreg[0m
+[01;32m/bin/gdialog[0m                         [01;32m/bin/setarch[0m
+[01;32m/bin/gdk-pixbuf-csource[0m              [01;32m/bin/setmetamode[0m
+[01;32m/bin/gdk-pixbuf-pixdata[0m              [01;32m/bin/setpci[0m
+[01;32m/bin/genisoimage[0m                     [01;32m/bin/setsid[0m
+[01;32m/bin/getconf[0m                         [01;36m/bin/sg[0m
+[01;32m/bin/gettext.sh[0m                      [01;36m/bin/sh[0m
+[01;32m/bin/gipddecode[0m                      [01;32m/bin/showrgb[0m
+[01;36m/bin/git-receive-pack[0m                [01;32m/bin/shred[0m
+[01;36m/bin/git-upload-archive[0m              [01;32m/bin/shuf[0m
+[01;36m/bin/git-upload-pack[0m                 [01;32m/bin/sieve[0m
+[01;32m/bin/gjs-console[0m                     [01;36m/bin/size[0m
+[01;32m/bin/glib-gettextize[0m                 [01;32m/bin/slxdecode[0m
+[01;36m/bin/gnome-keyring[0m                   [01;32m/bin/snapfuse[0m
+[01;32m/bin/gnome-session-remmina[0m           [01;36m/bin/snice[0m
+[01;36m/bin/gold[0m                            [01;36m/bin/soffice[0m
+[37;41m/bin/gpasswd[0m                         [01;32m/bin/software-properties-gtk[0m
+[01;32m/bin/gpg[0m                             [01;32m/bin/spd-conf[0m
+[01;32m/bin/gpgcompose[0m                      [01;32m/bin/sprof[0m
+[01;32m/bin/gpgconf[0m                         [01;32m/bin/ssh[0m
+[01;36m/bin/gpic[0m                            [01;32m/bin/ssh-add[0m
+[01;36m/bin/gprof[0m                           [01;32m/bin/ssh-copy-id[0m
+[01;32m/bin/gresource[0m                       [01;32m/bin/ssh-import-id[0m
+[01;32m/bin/groff[0m                           [01;32m/bin/ssh-import-id-gh[0m
+[01;32m/bin/grog[0m                            [01;36m/bin/static-sh[0m
+[01;32m/bin/grub-file[0m                       [01;32m/bin/stdbuf[0m
+[01;32m/bin/grub-glue-efi[0m                   [01;32m/bin/strace[0m
+[01;32m/bin/grub-menulst2cfg[0m                [01;32m/bin/strace-log-merge[0m
+[01;32m/bin/grub-mkimage[0m                    [01;32m/bin/sync[0m
+[01;32m/bin/grub-mkrelpath[0m                  [01;36m/bin/systemd[0m
+[01;32m/bin/grub-mkrescue[0m                   [01;32m/bin/systemd-analyze[0m
+[01;32m/bin/grub-mkstandalone[0m               [01;32m/bin/systemd-ask-password[0m
+[01;36m/bin/grub-ntldr-img[0m                  [01;32m/bin/systemd-delta[0m
+[01;32m/bin/grub-script-check[0m               [01;32m/bin/systemd-escape[0m
+[01;32m/bin/grub-syslinux2cfg[0m               [01;32m/bin/systemd-hwdb[0m
+[01;32m/bin/gsbj[0m                            [01;32m/bin/systemd-path[0m
+[01;32m/bin/gsdj[0m                            [01;36m/bin/systemd-resolve[0m
+[01;32m/bin/gslj[0m                            [01;32m/bin/systemd-socket-activate[0m
+[01;32m/bin/gsnd[0m                            [01;32m/bin/systemd-stdio-bridge[0m
+[01;32m/bin/gtf[0m                             [01;32m/bin/tac[0m
+[01;32m/bin/gtk-encode-symbolic-svg[0m         [01;32m/bin/tcsh[0m
+[01;32m/bin/gtk-launch[0m                      [01;32m/bin/tee[0m
+[01;32m/bin/gtk-update-icon-cache[0m           [01;32m/bin/tempfile[0m
+[01;32m/bin/gvfs-mime[0m                       [01;36m/bin/thunderbird[0m
+[01;32m/bin/gvfs-monitor-file[0m               [01;32m/bin/tic[0m
+[01;32m/bin/gvfs-move[0m                       [01;32m/bin/tificc[0m
+[01;32m/bin/gvfs-rename[0m                     [01;32m/bin/time[0m
+[01;32m/bin/gvfs-save[0m                       [01;32m/bin/tload[0m
+[01;32m/bin/gvfs-set-attribute[0m              [01;32m/bin/toe[0m
+[01;32m/bin/gvfs-trash[0m                      [01;32m/bin/touch[0m
+[01;32m/bin/gvfs-tree[0m                       [01;32m/bin/tracepath[0m
+[01;32m/bin/gzexe[0m                           [01;32m/bin/transicc[0m
+[01;32m/bin/h2ph[0m                            [01;32m/bin/transmission-gtk[0m
+[01;32m/bin/hbpldecode[0m                      [01;32m/bin/troff[0m
+[01;32m/bin/hciattach[0m                       [01;32m/bin/true[0m
+[01;32m/bin/hciconfig[0m                       [01;32m/bin/truncate[0m
+[01;36m/bin/hd[0m                              [01;32m/bin/ttfread[0m
+[01;32m/bin/head[0m                            [01;36m/bin/ua[0m
+[01;32m/bin/hex2hcd[0m                         [01;32m/bin/ubuntu-advantage[0m
+[01;32m/bin/hipercdecode[0m                    [01;36m/bin/ubuntu-bug[0m
+[01;32m/bin/hostid[0m                          [01;32m/bin/ucf[0m
+[01;32m/bin/hostname[0m                        [01;32m/bin/uname[0m
+[01;36m/bin/hp-check[0m                        [01;32m/bin/unattended-upgrade[0m
+[01;36m/bin/hp-firmware[0m                     [01;32m/bin/unexpand[0m
+[01;36m/bin/hp-logcapture[0m                   [01;32m/bin/unlink[0m
+[01;36m/bin/hp-makeuri[0m                      [01;36m/bin/unlzma[0m
+[01;36m/bin/hp-pkservice[0m                    [01;32m/bin/unopkg[0m
+[01;36m/bin/hp-probe[0m                        [01;32m/bin/unshare[0m
+[01;36m/bin/hp-testpage[0m                     [01;32m/bin/update-desktop-database[0m
+[01;36m/bin/hp-timedate[0m                     [01;32m/bin/update-mime-database[0m
+[01;36m/bin/i686-linux-gnu-pkg-config[0m       [01;32m/bin/uptime[0m
+[01;32m/bin/ibus-table-createdb[0m             [01;32m/bin/usb-creator-gtk[0m
+[01;32m/bin/iceauth[0m                         [01;32m/bin/usb_printerid[0m
+[01;32m/bin/id[0m                              [01;32m/bin/uuidparse[0m
+[01;32m/bin/im-config[0m                       [01;36m/bin/vi[0m
+[01;32m/bin/im-launch[0m                       [01;32m/bin/vim.basic[0m
+[01;32m/bin/inputattach[0m                     [01;36m/bin/vimdiff[0m
+[01;32m/bin/instmodsh[0m                       [01;32m/bin/volname[0m
+[01;32m/bin/ionice[0m                          [01;32m/bin/watch[0m
+[01;32m/bin/ipcmk[0m                           [01;32m/bin/watchgnupg[0m
+[01;32m/bin/ipod-read-sysinfo-extended[0m      [01;32m/bin/wc[0m
+[01;32m/bin/ipod-time-sync[0m                  [01;32m/bin/which[0m
+[01;32m/bin/ippfind[0m                         [01;32m/bin/whoami[0m
+[01;32m/bin/isdv4-serial-inputattach[0m        [01;32m/bin/whoopsie[0m
+[01;32m/bin/jpgicc[0m                          [01;32m/bin/wpa_passphrase[0m
+[01;32m/bin/kbd_mode[0m                        [01;36m/bin/write[0m
+[01;32m/bin/keyring[0m                         [01;32m/bin/x11perf[0m
+[01;32m/bin/kmod[0m                            [01;32m/bin/x86_64-linux-gnu-addr2line[0m
+[01;32m/bin/l2ping[0m                          [01;36m/bin/x86_64-linux-gnu-gcc[0m
+[01;36m/bin/lastb[0m                           [01;36m/bin/x86_64-linux-gnu-gcc-ranlib[0m
+[01;32m/bin/lastlog[0m                         [01;36m/bin/x86_64-linux-gnu-gold[0m
+[01;32m/bin/lavadecode[0m                      [01;32m/bin/x86_64-linux-gnu-gprof[0m
+[01;32m/bin/lcf[0m                             [01;36m/bin/x86_64-linux-gnu-ld[0m
+[01;36m/bin/ld[0m                              [01;32m/bin/x86_64-linux-gnu-ld.bfd[0m
+[01;36m/bin/ld.bfd[0m                          [01;32m/bin/x86_64-linux-gnu-ld.gold[0m
+[01;36m/bin/ld.gold[0m                         [01;36m/bin/x86_64-linux-gnu-pkg-config[0m
+[01;32m/bin/ldd[0m                             [01;32m/bin/x86_64-linux-gnu-ranlib[0m
+[01;36m/bin/lessfile[0m                        [01;32m/bin/x86_64-linux-gnu-readelf[0m
+[01;32m/bin/lesspipe[0m                        [01;32m/bin/x86_64-linux-gnu-size[0m
+[01;32m/bin/lexgrog[0m                         [01;32m/bin/x86_64-pc-linux-gnu-pkg-config[0m
+[01;32m/bin/libnetcfg[0m                       [01;32m/bin/xauth[0m
+[01;36m/bin/libpng-config[0m                   [01;32m/bin/xbiff[0m
+[01;32m/bin/libpng16-config[0m                 [01;32m/bin/xbrlapi[0m
+[01;36m/bin/libreoffice[0m                     [01;32m/bin/xcalc[0m
+[01;32m/bin/libtoolize[0m                      [01;32m/bin/xclipboard[0m
+[01;32m/bin/link[0m                            [01;32m/bin/xclock[0m
+[01;32m/bin/linkicc[0m                         [01;32m/bin/xcmsdb[0m
+[01;32m/bin/localc[0m                          [01;32m/bin/xconsole[0m
+[01;32m/bin/locale[0m                          [01;32m/bin/xdg-icon-resource[0m
+[01;32m/bin/locale-check[0m                    [01;32m/bin/xdg-mime[0m
+[01;32m/bin/localedef[0m                       [01;32m/bin/xdg-user-dirs-gtk-update[0m
+[01;32m/bin/loffice[0m                         [01;32m/bin/xdg-user-dirs-update[0m
+[01;32m/bin/lofromtemplate[0m                  [01;32m/bin/xfd[0m
+[01;32m/bin/logname[0m                         [01;32m/bin/xgamma[0m
+[01;32m/bin/lomath[0m                          [01;32m/bin/xgc[0m
+[01;32m/bin/look[0m                            [01;32m/bin/xkbevd[0m
+[01;32m/bin/loweb[0m                           [01;32m/bin/xkbwatch[0m
+[01;32m/bin/lowntfs-3g[0m                      [01;32m/bin/xkeystone[0m
+[01;32m/bin/lp_solve[0m                        [01;32m/bin/xload[0m
+[01;32m/bin/lsb_release[0m                     [01;32m/bin/xmag[0m
+[01;32m/bin/lsblk[0m                           [01;32m/bin/xmessage[0m
+[01;32m/bin/lsipc[0m                           [01;32m/bin/xmore[0m
+[01;36m/bin/lsmod[0m                           [01;32m/bin/xqxdecode[0m
+[01;32m/bin/lsof[0m                            [01;32m/bin/xrdb[0m
+[01;32m/bin/lspci[0m                           [01;32m/bin/xrefresh[0m
+[01;32m/bin/lsusb[0m                           [01;32m/bin/xsetmode[0m
+[01;32m/bin/ltrace[0m                          [01;32m/bin/xvidtune[0m
+[01;32m/bin/lwp-download[0m                    [01;32m/bin/xwd[0m
+[01;36m/bin/lz4c[0m                            [01;32m/bin/xwud[0m
+[01;36m/bin/lzdiff[0m                          [01;32m/bin/xxd[0m
+[01;36m/bin/lzma[0m                            [01;32m/bin/xzdiff[0m
+[01;36m/bin/lzmore[0m                          [01;32m/bin/xzmore[0m
+[01;32m/bin/m17n-db[0m                         [01;36m/bin/ypdomainname[0m
+[01;32m/bin/make[0m                            [01;32m/bin/zdiff[0m
+[01;32m/bin/man-recode[0m                      [01;32m/bin/zforce[0m
+[01;32m/bin/mandb[0m                           [01;32m/bin/zipcloak[0m
+[01;32m/bin/manpath[0m                         [01;32m/bin/zipnote[0m
+[01;36m/bin/mattrib[0m                         [01;32m/bin/zjsdecode[0m
+[01;32m/bin/mawk[0m                            [01;32m/bin/zmore[0m
+]0;u20052@solgae: ~u20052@solgae:~$ cla[Kear
+[H[2J[3J]0;u20052@solgae: ~u20052@solgae:~$ *p[K[Ks; [K[K[Kls *p????
+ls: cannot access '*p????': No such file or directory
+]0;u20052@solgae: ~u20052@solgae:~$ ls /bin/*p????
+[0m[01;32m/bin/apgbfm[0m                  [01;32m/bin/pacat[0m       [01;32m/bin/psicc[0m
+[01;32m/bin/appres[0m                  [01;32m/bin/pacmd[0m       [01;32m/bin/pslog[0m
+[01;32m/bin/apturl[0m                  [01;32m/bin/pactl[0m       [01;32m/bin/rpcgen[0m
+[01;32m/bin/autoupdate[0m              [01;32m/bin/padsp[0m       [01;32m/bin/run-parts[0m
+[01;32m/bin/check-language-support[0m  [01;36m/bin/pager[0m       [01;32m/bin/sdptool[0m
+[01;32m/bin/ciptool[0m                 [01;36m/bin/pamon[0m       [01;32m/bin/sensible-pager[0m
+[01;32m/bin/dumpkeys[0m                [01;36m/bin/parec[0m       [01;32m/bin/smproxy[0m
+[01;32m/bin/fwupdate[0m                [01;32m/bin/partx[0m       [01;32m/bin/snapfuse[0m
+[01;32m/bin/fwupdmgr[0m                [01;32m/bin/paste[0m       [01;32m/bin/splain[0m
+[01;32m/bin/gpgtar[0m                  [01;32m/bin/patch[0m       [01;32m/bin/ssh-copy-id[0m
+[01;36m/bin/hp-logcapture[0m           [01;32m/bin/pgrep[0m       [01;32m/bin/symcryptrun[0m
+[01;36m/bin/hp-probe[0m                [01;36m/bin/pidof[0m       [01;32m/bin/system-config-printer-applet[0m
+[01;32m/bin/ijs_pxljr[0m               [01;36m/bin/ping4[0m       [01;32m/bin/tempfile[0m
+[01;32m/bin/ippfind[0m                 [01;36m/bin/ping6[0m       [01;32m/bin/uncompress[0m
+[01;32m/bin/ipptool[0m                 [01;32m/bin/pinky[0m       [01;32m/bin/upower[0m
+[01;32m/bin/jpgicc[0m                  [01;32m/bin/pkcon[0m       [01;32m/bin/uptime[0m
+[01;32m/bin/lofromtemplate[0m          [01;36m/bin/pkill[0m       [01;32m/bin/utmpdump[0m
+[01;32m/bin/loimpress[0m               [01;32m/bin/pkmon[0m       [01;32m/bin/uuidparse[0m
+[01;32m/bin/lpstat[0m                  [01;32m/bin/pl2pm[0m       [01;32m/bin/whiptail[0m
+[01;32m/bin/lspgpot[0m                 [01;32m/bin/ppdpo[0m       [01;32m/bin/word-list-compress[0m
+[01;32m/bin/mapscrn[0m                 [01;32m/bin/prezip-bin[0m  [01;32m/bin/xdg-dbus-proxy[0m
+[01;32m/bin/mountpoint[0m              [01;36m/bin/print[0m       [01;32m/bin/xdg-user-dirs-gtk-update[0m
+[01;32m/bin/mscompress[0m              [01;32m/bin/prove[0m       [01;32m/bin/xdg-user-dirs-update[0m
+[01;32m/bin/nm-applet[0m               [01;32m/bin/ps2pdf12[0m    [01;32m/bin/xkbprint[0m
+[01;32m/bin/nsupdate[0m                [01;32m/bin/ps2pdf13[0m    [01;32m/bin/zipgrep[0m
+[01;32m/bin/ntfs-3g.probe[0m           [01;32m/bin/ps2pdf14[0m    [01;32m/bin/zipinfo[0m
+[01;36m/bin/on_ac_power[0m             [01;32m/bin/ps2pdfwr[0m    [01;32m/bin/zipnote[0m
+[01;32m/bin/openvt[0m                  [01;32m/bin/ps2ps[0m
+]0;u20052@solgae: ~u20052@solgae:~$ ls
+'1,4w practice'   lyrics    oqp        [0m[37;41msetgid[0m   timerecord
+ date.txt         [30;42mmom[0m       practice   [37;41msetuid[0m   typescript
+ ls.txt           [01;32mmy_life[0m   prog.c     sticky   u20052-2
+]0;u20052@solgae: ~u20052@solgae:~$ cat oqp
+김승조
+슬프다
+돈�잃었다
+꿈이다
+]0;u20052@solgae: ~u20052@solgae:~$ cat ??
+cat: '??': No such file or directory
+]0;u20052@solgae: ~u20052@solgae:~$ cat oqp exit 1;
+김승조
+슬프다
+돈�잃었다
+꿈이다
+cat: exit: No such file or directory
+cat: 1: No such file or directory
+]0;u20052@solgae: ~u20052@solgae:~$ cat oqp exit
+김승조
+슬프다
+돈�잃었다
+꿈이다
+cat: exit: No such file or directory
+]0;u20052@solgae: ~u20052@solgae:~$ cat oqop[K[Kp; exit 1
+김승조
+슬프다
+돈�잃었다
+꿈이다
+exit
+
+Script done on 2021-04-14 07:34:08+09:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2021-04-14 07:35:26+09:00 [TERM="xterm" TTY="/dev/pts/6" COLUMNS="80" LINES="58"]
+]0;u20052@solgae: ~u20052@solgae:~$ echo *a
+*a
+]0;u20052@solgae: ~u20052@solgae:~$ echo a*
+a*
+]0;u20052@solgae: ~u20052@solgae:~$ c[Kecho a*
+a*
+]0;u20052@solgae: ~u20052@solgae:~$ ls a*
+ls: cannot access 'a*': No such file or directory
+]0;u20052@solgae: ~u20052@solgae:~$ echo file a*
+file a*
+]0;u20052@solgae: ~u20052@solgae:~$ cat ?? || echo ERROr[KR
+cat: '??': No such file or directory
+ERROR
+]0;u20052@solgae: ~u20052@solgae:~$ cat ?? fales[Kse[K[K[Kse || echo ERROR
+cat: '??': No such file or directory
+cat: false: No such file or directory
+ERROR
+]0;u20052@solgae: ~u20052@solgae:~$ mv typescript u20052 -4[K[K[K-4
+]0;u20052@solgae: ~u20052@solgae:~$ cp u2050[K[K052 [K-4 ~u20052[K[K[K[K[K00000/hw4
+]0;u20052@solgae: ~u20052@solgae:~$ cd /home
+]0;u20052@solgae: /homeu20052@solgae:/home$ cd u00000
+]0;u20052@solgae: /home/u00000u20052@solgae:/home/u00000$ cd hw4
+]0;u20052@solgae: /home/u00000/hw4u20052@solgae:/home/u00000/hw4$ ls
+u14016-4  u17022-4  u18064-4  u19054-4   u20022-4  u20053-4   u20072-4
+u14095-4  u17056-4  u18068-4  u200008-4  u20023-4  u20054-4   u20077-4
+u15082-4  u17063-4  u18070-4  u20008-4   u20028-4  u20055-4   u20080-4
+u16010-4  u18011-4  u18075-4  u20009-4   u20029-4  u200551-4  u20084-4
+u16016-4  u18016-4  u18081-4  u20010-4   u20036-4  u20057-4   u20088-4
+u16017-4  u18022-4  u18100-4  u20013-4   u20045-4  u20059-4   u20090-4
+u16019-4  u18027-4  u18138-4  u20016-4   u20046-4  u20067-4
+u16082-4  u18047-4  u19051-4  u20018-4   u20052-4  u20071-4
+]0;u20052@solgae: /home/u00000/hw4u20052@solgae:/home/u00000/hw4$ cd ~u20052
+]0;u20052@solgae: ~u20052@solgae:~$ exit
+
+Script done on 2021-04-14 08:20:33+09:00 [COMMAND_EXIT_CODE="0"]
